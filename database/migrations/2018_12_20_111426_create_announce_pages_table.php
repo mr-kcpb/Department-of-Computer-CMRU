@@ -14,8 +14,12 @@ class CreateAnnouncePagesTable extends Migration
     public function up()
     {
         Schema::create('announce_pages', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('announce_id');
+            $table->unsignedInteger('user_id');
+            $table->string('title');
+            $table->text('detail');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

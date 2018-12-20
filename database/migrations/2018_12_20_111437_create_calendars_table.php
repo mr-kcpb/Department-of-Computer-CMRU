@@ -14,8 +14,17 @@ class CreateCalendarsTable extends Migration
     public function up()
     {
         Schema::create('calendars', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('calendar_id');
+            $table->unsignedInteger('user_id');
+            $table->string('topic');
+            $table->string('place');
+            $table->string('detail');
+            $table->date('date_start');
+            $table->date('date_end');
+            $table->string('time_start');
+            $table->string('time_end');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

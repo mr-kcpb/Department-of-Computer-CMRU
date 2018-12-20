@@ -14,8 +14,13 @@ class CreateDepartmentPagesTable extends Migration
     public function up()
     {
         Schema::create('department_pages', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('department_id');
+            $table->unsignedInteger('user_id');
+            $table->string('title');
+            $table->text('detail');
+            $table->unsignedInteger('sort');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

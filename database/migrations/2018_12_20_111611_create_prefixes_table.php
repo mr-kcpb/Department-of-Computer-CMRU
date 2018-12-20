@@ -14,8 +14,8 @@ class CreatePrefixesTable extends Migration
     public function up()
     {
         Schema::create('prefixes', function (Blueprint $table) {
-            $table->increments('id');
-            $table->timestamps();
+            $table->increments('prefix_id');
+            $table->string('prefix_name');
         });
     }
 
