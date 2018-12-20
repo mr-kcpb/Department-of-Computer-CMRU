@@ -26,3 +26,5 @@ Route::prefix('department')->group(function () {
     Route::get('17', 'DepartmentPagesController@page_17')->name('department.17');
     Route::get('18', 'DepartmentPagesController@page_18')->name('department.18');
 });
+
+Route::get('main', 'BackController@main')->name('main');
