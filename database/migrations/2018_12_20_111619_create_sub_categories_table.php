@@ -22,6 +22,12 @@ class CreateSubCategoriesTable extends Migration
             $table->timestamps();
             $table->softDeletes();
         });
+
+        Schema::table('categories', function (Blueprint $table) {
+            $table->foreign('category_id')
+                ->references('category_id')
+                ->on('sub_categories');
+        });
     }
 
     /**
@@ -31,6 +37,7 @@ class CreateSubCategoriesTable extends Migration
      */
     public function down()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('sub_categories');
     }
 }

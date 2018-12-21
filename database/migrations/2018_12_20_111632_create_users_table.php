@@ -28,6 +28,48 @@ class CreateUsersTable extends Migration
             $table->timestamps();
             $table->softDeletes();
         });
+
+        Schema::table('prefixes', function (Blueprint $table) {
+            $table->foreign('prefix_id')
+                ->references('prefix_id')
+                ->on('users');
+        });
+
+        Schema::table('activity_pages', function (Blueprint $table) {
+            $table->foreign('user_id')
+                ->references('user_id')
+                ->on('users');
+        });
+
+        Schema::table('announce_pages', function (Blueprint $table) {
+            $table->foreign('user_id')
+                ->references('user_id')
+                ->on('users');
+        });
+
+        Schema::table('calendars', function (Blueprint $table) {
+            $table->foreign('user_id')
+                ->references('user_id')
+                ->on('users');
+        });
+
+        Schema::table('categories', function (Blueprint $table) {
+            $table->foreign('user_id')
+                ->references('user_id')
+                ->on('users');
+        });
+
+        Schema::table('department_pages', function (Blueprint $table) {
+            $table->foreign('user_id')
+                ->references('user_id')
+                ->on('users');
+        });
+
+        Schema::table('logs', function (Blueprint $table) {
+            $table->foreign('user_id')
+                ->references('user_id')
+                ->on('users');
+        });
     }
 
     /**
@@ -37,6 +79,7 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('users');
     }
 }
