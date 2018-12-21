@@ -29,10 +29,10 @@ class CreateUsersTable extends Migration
             $table->softDeletes();
         });
 
-        Schema::table('prefixes', function (Blueprint $table) {
+        Schema::table('users', function (Blueprint $table) {
             $table->foreign('prefix_id')
                 ->references('prefix_id')
-                ->on('users');
+                ->on('prefixes');
         });
 
         Schema::table('activity_pages', function (Blueprint $table) {
