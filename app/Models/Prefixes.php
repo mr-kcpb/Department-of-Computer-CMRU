@@ -4,11 +4,11 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Contacts extends Model
+class Prefixes extends Model
 {
-    protected $table = 'contacts';
+    protected $table = 'prefixes';
 
     protected $guarded = [];
 
-    protected $dates = ['deleted_at'];
+    public $timestamps = false;
 }

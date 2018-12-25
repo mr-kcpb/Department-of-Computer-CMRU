@@ -12,12 +12,33 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-        Categories::create(['category_name' => 'ภาควิชาคอมพิวเตอร์']);
-        Categories::create(['category_name' => 'หลักสูตร']);
-        Categories::create(['category_name' => 'ข่าวสาร']);
-        Categories::create(['category_name' => 'บุคคลกร']);
-        Categories::create(['category_name' => 'ปฏิทินวิชาการ']);
-        Categories::create(['category_name' => 'ติดต่อ']);
-        Categories::create(['category_name' => 'บริการออนไลน์']);
+        Categories::create([
+            'user_id' => 1,
+            'category_name' => 'ภาควิชาคอมพิวเตอร์'
+        ]);
+        Categories::create([
+            'user_id' => 1,
+            'category_name' => 'หลักสูตร'
+        ]);
+        Categories::create([
+            'user_id' => 1,
+            'category_name' => 'ข่าวสาร'
+        ]);
+        Categories::create([
+            'user_id' => 1,
+            'category_name' => 'บุคคลกร'
+        ]);
+        Categories::create([
+            'user_id' => 1,
+            'category_name' => 'ปฏิทินวิชาการ'
+        ]);
+        Categories::create([
+            'user_id' => 1,
+            'category_name' => 'ติดต่อ'
+        ]);
+        Categories::create([
+            'user_id' => 1,
+            'category_name' => 'บริการออนไลน์'
+        ]);
     }
 }

@@ -17,7 +17,7 @@ class CreateSubCategoriesTable extends Migration
             $table->increments('sub_category_id');
             $table->unsignedInteger('category_id');
             $table->string('sub_category_name');
-            $table->string('link_page');
+            $table->string('link_page')->nullable();
             $table->unsignedInteger('sort');
             $table->timestamps();
             $table->softDeletes();
