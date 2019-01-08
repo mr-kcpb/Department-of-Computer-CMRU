@@ -96,8 +96,9 @@ class UserSeeder extends Seeder
         
         createUser(
             [
-                'first_name' => 'ภาณุวัฒน์',
-                'last_name'  => 'สุวรรณกูล',
+                'first_name'    => 'ภาณุวัฒน์',
+                'last_name'     => 'สุวรรณกูล',
+                'permission_id' => 1,
             ]
         );
         

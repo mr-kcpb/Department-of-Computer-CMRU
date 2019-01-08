@@ -50,6 +50,30 @@
             display: inline-block;
             margin-left: 40px;
         }
+
+        .pt-10 {
+            padding-top: 10px;
+        }
+
+        .pt-20 {
+            padding-top: 20px;
+        }
+
+        .pt-30 {
+            padding-top: 30px;
+        }
+
+        .pb-10 {
+            padding-bottom: 10px;
+        }
+
+        .pb-20 {
+            padding-bottom: 20px;
+        }
+
+        .pb-30 {
+            padding-bottom: 30px;
+        }
     </style>
 </head>
 

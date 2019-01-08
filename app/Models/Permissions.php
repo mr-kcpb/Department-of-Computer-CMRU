@@ -4,12 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Prefixes extends Model
+class Permissions extends Model
 {
     
-    protected $primaryKey = 'prefix_id';
+    protected $primaryKey = 'permission_id';
     
-    protected $table = 'prefixes';
+    protected $table = 'permissions';
     
     protected $guarded = [];
     

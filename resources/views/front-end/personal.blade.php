@@ -23,26 +23,23 @@
 
                     <!-- Team #7 -->
                     <div class="team-seven">
+
                         <div class="row">
-                            <div class="col-md-3 col-sm-6">
+                            <div class="col-xs-12 col-sm-12 col-md-offset-5 col-md-2">
+
+                                <div class="form-group text-center">
+                                    <h3>หัวหน้าภาควิชา</h3>
+                                </div>
+
                                 <!-- Team member -->
                                 <div class="team-member">
                                     <div class="t-container">
-                                        <!-- Social -->
-                                        <div class="social brand-bg">
-                                            <a class="facebook" href="#"><i class="fa fa-facebook circle-3"></i></a>
-                                            <a class="google-plus" href="#"><i
-                                                        class="fa fa-google-plus circle-3"></i></a>
-                                            <a class="twitter" href="#"><i class="fa fa-twitter circle-3"></i></a>
-                                            <a class="linkedin" href="#"><i class="fa fa-linkedin circle-3"></i></a>
-                                        </div>
-                                        <!-- Image -->
-                                        <img class="img-responsive" src="{{ asset('template/img/user/1.jpg') }}"
-                                             alt=""/>
+                                        <img class="img-responsive"
+                                             src="{{ getImage('users/'.$root->user_id.'.jpg') }}"
+                                             alt="user"/>
                                     </div>
                                     <!-- Name -->
-                                    <h4> Thomson <span>East Zone</span></h4>
-                                    <p>Lorem ipsum ctetur dolor ctetur sit amet, conse ctetur tempor elit.</p>
+                                    <h6>{{ $root->prefix->prefix_name }}<br>{{ $root->getFullName() }}</h6>
                                     <!-- Contact details -->
                                     <div class="contact-details">
                                         <p class="text-primary">สังกัด ภาควิชาคอมพิวเตอร์</p>
@@ -51,87 +48,29 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3 col-sm-6">
-                                <!-- Team member -->
-                                <div class="team-member">
-                                    <div class="t-container">
-                                        <!-- Social -->
-                                        <div class="social brand-bg">
-                                            <a class="facebook" href="#"><i class="fa fa-facebook circle-3"></i></a>
-                                            <a class="google-plus" href="#"><i
-                                                        class="fa fa-google-plus circle-3"></i></a>
-                                            <a class="twitter" href="#"><i class="fa fa-twitter circle-3"></i></a>
-                                            <a class="linkedin" href="#"><i class="fa fa-linkedin circle-3"></i></a>
+                        </div>
+
+                        <div class="row">
+                            @foreach ($users as $user)
+                                <div class="col-xs-6 col-sm-3 col-md-2">
+                                    <!-- Team member -->
+                                    <div class="team-member">
+                                        <div class="t-container">
+                                            <img class="img-responsive"
+                                                 src="{{ getImage('users/'.$user->user_id.'.jpg') }}"
+                                                 alt="user"/>
                                         </div>
-                                        <!-- Image -->
-                                        <img class="img-responsive" src="{{ asset('template/img/user/2.jpg') }}"
-                                             alt=""/>
-                                    </div>
-                                    <!-- Name -->
-                                    <h4> Thomson <span>West Zone</span></h4>
-                                    <p>Lorem ipsum ctetur dolor ctetur sit amet, conse ctetur tempor elit.</p>
-                                    <!-- Contact details -->
-                                    <div class="contact-details">
-                                        <p class="text-primary">สังกัด ภาควิชาคอมพิวเตอร์</p>
-                                        <p class="text-primary">สถานะ ทำงานปกติ</p>
-                                        <p class="text-primary">ห้องพักอาจารย์ 221</p>
+                                        <!-- Name -->
+                                        <h6>{{ $user->prefix->prefix_name }}<br>{{ $user->getFullName() }}</h6>
+                                        <!-- Contact details -->
+                                        <div class="contact-details">
+                                            <p class="text-primary">สังกัด ภาควิชาคอมพิวเตอร์</p>
+                                            <p class="text-primary">สถานะ ทำงานปกติ</p>
+                                            <p class="text-primary">ห้องพักอาจารย์ 221</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <!-- Team member -->
-                                <div class="team-member">
-                                    <div class="t-container">
-                                        <!-- Social -->
-                                        <div class="social brand-bg">
-                                            <a class="facebook" href="#"><i class="fa fa-facebook circle-3"></i></a>
-                                            <a class="google-plus" href="#"><i
-                                                        class="fa fa-google-plus circle-3"></i></a>
-                                            <a class="twitter" href="#"><i class="fa fa-twitter circle-3"></i></a>
-                                            <a class="linkedin" href="#"><i class="fa fa-linkedin circle-3"></i></a>
-                                        </div>
-                                        <!-- Image -->
-                                        <img class="img-responsive" src="{{ asset('template/img/user/3.jpg') }}"
-                                             alt=""/>
-                                    </div>
-                                    <!-- Name -->
-                                    <h4> Thomson <span>South Zone</span></h4>
-                                    <p>Lorem ipsum ctetur dolor ctetur sit amet, conse ctetur tempor elit.</p>
-                                    <!-- Contact details -->
-                                    <div class="contact-details">
-                                        <p class="text-primary">สังกัด ภาควิชาคอมพิวเตอร์</p>
-                                        <p class="text-primary">สถานะ ทำงานปกติ</p>
-                                        <p class="text-primary">ห้องพักอาจารย์ 221</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <!-- Team member -->
-                                <div class="team-member">
-                                    <div class="t-container">
-                                        <!-- Social -->
-                                        <div class="social brand-bg">
-                                            <a class="facebook" href="#"><i class="fa fa-facebook circle-3"></i></a>
-                                            <a class="google-plus" href="#"><i
-                                                        class="fa fa-google-plus circle-3"></i></a>
-                                            <a class="twitter" href="#"><i class="fa fa-twitter circle-3"></i></a>
-                                            <a class="linkedin" href="#"><i class="fa fa-linkedin circle-3"></i></a>
-                                        </div>
-                                        <!-- Image -->
-                                        <img class="img-responsive" src="{{ asset('template/img/user/4.jpg') }}"
-                                             alt=""/>
-                                    </div>
-                                    <!-- Name -->
-                                    <h4> Thomson <span>North Zone</span></h4>
-                                    <p>Lorem ipsum ctetur dolor ctetur sit amet, conse ctetur tempor elit.</p>
-                                    <!-- Contact details -->
-                                    <div class="contact-details">
-                                        <p class="text-primary">สังกัด ภาควิชาคอมพิวเตอร์</p>
-                                        <p class="text-primary">สถานะ ทำงานปกติ</p>
-                                        <p class="text-primary">ห้องพักอาจารย์ 221</p>
-                                    </div>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                     </div>
                     <!-- Team #7 end -->

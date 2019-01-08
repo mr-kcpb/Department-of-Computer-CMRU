@@ -113,25 +113,8 @@
                             </ul>
                         </li>
                         <li><a href="{{ route('department.3') }}">หลักสูตร</a></li>
-                        {{--<li>--}}
-                        {{--<a href="{{ route('course') }}">หลักสูตร</a>--}}
-                        {{--<!-- Submenu -->--}}
-                        {{--<ul>--}}
-                        {{--<li>--}}
-                        {{--<a href="{{ route('course') }}" style="width: 200px">วิทยาการคอมพิวเตอร์</a>--}}
-                        {{--</li>--}}
-                        {{--<li>--}}
-                        {{--<a href="{{ route('course') }}" style="width: 200px">เทคโนโลยีสารสนเทศ</a>--}}
-                        {{--</li>--}}
-                        {{--<li>--}}
-                        {{--<a href="{{ route('course') }}" style="width: 450px">--}}
-                        {{--สาขาวิชาการโปรแกรมและการรักษาความปลอดภัยบนเว็บ--}}
-                        {{--</a>--}}
-                        {{--</li>--}}
-                        {{--</ul>--}}
-                        {{--</li>--}}
                         <li><a href="#">ข่าวสาร</a></li>
-                        <li><a href="{{ route('department.2') }}">บุคลากร</a></li>
+                        <li><a href="{{ route('personal') }}">บุคลากร</a></li>
                         <li><a href="http://www.academic.cmru.ac.th/pdf/2557/calendar57_07042558144939.pdf"
                                target="_blank">ปฏิทินวิชาการ</a></li>
                         <li><a href="{{ route('department.18') }}">ติดต่อ</a></li>
