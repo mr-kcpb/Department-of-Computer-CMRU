@@ -16,6 +16,14 @@
                                 </p>
                             </a>
                         @endforeach
+                            <div class="form-group text-right">
+                                <a href="#">
+                                    <small>
+                                        ข่าวประชาสัมพันธ์ ทั้งหมด
+                                        <i class="fa fa-angle-double-right"></i>
+                                    </small>
+                                </a>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -32,6 +40,14 @@
                             </p>
                         </a>
                     @endforeach
+                    <div class="form-group text-right">
+                        <a href="#">
+                            <small>
+                                กิจกรรมภาควิชาฯ ทั้งหมด
+                                <i class="fa fa-angle-double-right"></i>
+                            </small>
+                        </a>
+                    </div>
                 </div>
             </div>
             <br/>
