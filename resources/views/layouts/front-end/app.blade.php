@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
     <meta charset="utf-8">
     <title>www.computer.cmru.ac.th</title>
@@ -81,20 +81,14 @@
 <!-- Add "pattern-x" (1 to 5) for background patterns. -->
 <!-- Add "img-x" (1 to 5) for background images. -->
 <body>
-
 <!-- Outer Starts -->
 <div class="outer" style="min-height: 100vh">
-
     @include('layouts.front-end.components.topbar')
-
     @include('layouts.front-end.components.navbar')
-
     @yield('content')
-
+    @include('layouts.front-end.components.footer')
 </div>
 <!-- Outer Ends -->
-
-@include('layouts.front-end.components.footer')
 
 <!-- Scroll to top -->
 <span class="totop"><a href="#"><i class="fa fa-angle-up bg-color"></i></a></span>

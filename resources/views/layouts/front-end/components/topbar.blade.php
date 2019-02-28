@@ -5,7 +5,7 @@
 <div class="row">
     <div class="col-xs-12">
         <div style="padding-top: 30px">
-            <a href="{{ route('index') }}">
+            <a href="{{ route('home') }}">
                 <img src="http://www.computer.cmru.ac.th/images/logo.png" alt="" class="img-responsive">
             </a>
         </div>

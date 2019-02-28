@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-2" id="navbar-logo" style="display: none">
                 <div class="logo">
-                    <a href="{{ route('index') }}">
+                    <a href="{{ route('home') }}">
                         <img src="http://www.computer.cmru.ac.th/images/logo.png" alt="" class="img-responsive">
                     </a>
                 </div>
@@ -15,7 +15,7 @@
                 <!-- Navigation starts.  -->
                 <div class="navy">
                     <ul>
-                        <li><a href="{{ route('index') }}">หน้าหลัก</a></li>
+                        <li><a href="{{ route('home') }}">หน้าหลัก</a></li>
                         <li>
                             <a href="javascript:void(0);">ภาควิชาคอมพิวเตอร์</a>
                             <!-- Submenu -->
