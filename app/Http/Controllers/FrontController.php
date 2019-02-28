@@ -25,7 +25,7 @@ class FrontController extends Controller
     
     public function personal()
     {
-        $root  = Users::where('permission_id', 1)->first();
+        $root  = Users::where('root_status', 1)->first();
         $users = Users::all();
         
         return view('front-end.personal', compact('root', 'users'));

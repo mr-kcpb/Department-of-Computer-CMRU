@@ -24,7 +24,8 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('email');
             $table->string('line_id');
-            $table->unsignedInteger('permission_id')->default(4)->nullable();
+            $table->unsignedTinyInteger('edit_content')->default(0)->nullable();
+            $table->unsignedTinyInteger('root_status')->default(0)->nullable();
             $table->rememberToken();
             $table->timestamps();
             $table->softDeletes();
