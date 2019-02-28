@@ -5,6 +5,7 @@ Route::get('course', 'FrontController@course')->name('course');
 Route::get('news', 'FrontController@news')->name('news');
 Route::get('personnel', 'FrontController@personnel')->name('personnel');
 Route::get('contact', 'FrontController@contact')->name('contact');
+Route::get('announce/{id}', 'ContentController@getAnnounce')->name('get.announce');
 
 Route::prefix('department')->group(function () {
     Route::get('1', 'DepartmentPagesController@page_1')->name('department.1');

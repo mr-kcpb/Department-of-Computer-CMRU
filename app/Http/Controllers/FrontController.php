@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AnnouncePage;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -10,7 +11,9 @@ class FrontController extends Controller
     
     public function home()
     {
-        return view('front-end.home');
+        $announces = AnnouncePage::latest()->paginate(10);
+        
+        return view('front-end.home', compact('announces'));
     }
     
     public function course()
