@@ -3,7 +3,7 @@
 Route::get('/', 'FrontController@index')->name('index');
 Route::get('course', 'FrontController@course')->name('course');
 Route::get('news', 'FrontController@news')->name('news');
-Route::get('personal', 'FrontController@personal')->name('personal');
+Route::get('personnel', 'FrontController@personnel')->name('personnel');
 Route::get('contact', 'FrontController@contact')->name('contact');
 
 Route::prefix('department')->group(function () {

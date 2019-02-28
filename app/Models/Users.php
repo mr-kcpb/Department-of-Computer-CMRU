@@ -25,4 +25,9 @@ class Users extends Model
         return $this->attributes['first_name'] . ' '
             . $this->attributes['last_name'];
     }
+    
+    public function image()
+    {
+        return asset('storage/personnel/' . $this->attributes['user_id'] . '.jpg');
+    }
 }

@@ -7,7 +7,7 @@
             <div class="container">
                 <h2>บุคลากร ภาควิชาคอมพิวเตอร์</h2>
                 <div class="breads">
-                    หน้าหลัก / <a href="{{ route('personal') }}">บุคลากร</a>
+                    หน้าหลัก / <a href="{{ route('personnel') }}">บุคลากร</a>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -35,7 +35,7 @@
                                 <div class="team-member">
                                     <div class="t-container">
                                         <img class="img-responsive"
-                                             src="{{ getImage('users/'.$root->user_id.'.jpg') }}"
+                                             src="{{ $root->image() }}"
                                              alt="user"/>
                                     </div>
                                     <!-- Name -->
@@ -57,7 +57,7 @@
                                     <div class="team-member">
                                         <div class="t-container">
                                             <img class="img-responsive"
-                                                 src="{{ getImage('users/'.$user->user_id.'.jpg') }}"
+                                                 src="{{ $user->image() }}"
                                                  alt="user"/>
                                         </div>
                                         <!-- Name -->

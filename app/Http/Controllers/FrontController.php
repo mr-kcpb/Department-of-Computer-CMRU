@@ -23,12 +23,12 @@ class FrontController extends Controller
         return view('front-end.news');
     }
     
-    public function personal()
+    public function personnel()
     {
         $root  = Users::where('root_status', 1)->first();
         $users = Users::all();
         
-        return view('front-end.personal', compact('root', 'users'));
+        return view('front-end.personnel', compact('root', 'users'));
     }
     
     public function contact()

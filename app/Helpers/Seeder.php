@@ -14,6 +14,8 @@ function createUser($data)
     $password    = empty($data['password']) ? null : $data['password'];
     $email       = empty($data['email']) ? null : $data['email'];
     $line_id     = empty($data['line_id']) ? null : $data['line_id'];
+    $root_status = empty($data['root_status']) ? null
+        : $data['root_status'];
     
     try {
         $lastUserId = \App\Models\Users::orderBy('user_id', 'desc')
@@ -41,6 +43,7 @@ function createUser($data)
                 . '@gmail.com' : $email,
             'line_id'     => is_null($line_id) ? 'demo_line_' . $lastUserId
                 : $line_id,
+            'root_status' => is_null($root_status) ? 0 : $root_status,
         ]
     );
 }

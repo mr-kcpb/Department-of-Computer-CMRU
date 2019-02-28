@@ -114,7 +114,7 @@
                         </li>
                         <li><a href="{{ route('department.3') }}">หลักสูตร</a></li>
                         <li><a href="#">ข่าวสาร</a></li>
-                        <li><a href="{{ route('personal') }}">บุคลากร</a></li>
+                        <li><a href="{{ route('personnel') }}">บุคลากร</a></li>
                         <li><a href="http://www.academic.cmru.ac.th/pdf/2557/calendar57_07042558144939.pdf"
                                target="_blank">ปฏิทินวิชาการ</a></li>
                         <li><a href="{{ route('department.18') }}">ติดต่อ</a></li>
