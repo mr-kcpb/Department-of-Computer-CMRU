@@ -27,6 +27,10 @@
             font-size: 18px !important;
         }
 
+        .navy ul li ul li a {
+            font-size: 14px !important;
+        }
+
         .tab {
             display: inline-block;
             margin-left: 40px;

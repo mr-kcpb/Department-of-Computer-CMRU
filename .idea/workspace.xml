@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ebd183e2-5c0a-46b0-8951-f3093ebcb69c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FrontController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front-end/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/front-end/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front-end/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front-end/components/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front-end/components/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,10 +17,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/front-end/announce-detail.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/layouts/front-end/app.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+            <state relative-caret-position="650">
+              <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -95,7 +91,6 @@
       <list>
         <option value="$PROJECT_DIR$/config/filesystems.php" />
         <option value="$PROJECT_DIR$/resources/views/front-end/personnel.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/front-end/components/navbar.blade.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/config/nova.php" />
         <option value="$PROJECT_DIR$/config/auth.php" />
@@ -138,12 +133,13 @@
         <option value="$PROJECT_DIR$/app/Nova/Announce.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/FrontController.php" />
         <option value="$PROJECT_DIR$/nova/resources/views/partials/footer.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/front-end/app.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/front-end/components/footer.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/front-end/home.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ContentController.php" />
         <option value="$PROJECT_DIR$/resources/views/front-end/announce-detail.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/front-end/components/navbar.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/front-end/app.blade.php" />
       </list>
     </option>
   </component>
@@ -349,12 +345,12 @@
       <workItem from="1545935086761" duration="597000" />
       <workItem from="1546939638110" duration="11151000" />
       <workItem from="1551325775164" duration="15652000" />
-      <workItem from="1551392319338" duration="1840000" />
+      <workItem from="1551392319338" duration="2168000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42642000" />
+    <option name="totallyTimeSpent" value="42970000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="23" width="1920" height="1057" extended-state="6" />
@@ -389,9 +385,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Models/Calendar.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Contact.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -691,16 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/front-end/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="74" column="51" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/front-end/components/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -742,7 +725,21 @@
     <entry file="file://$PROJECT_DIR$/resources/views/front-end/announce-detail.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+          <caret line="17" column="49" lean-forward="true" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/front-end/components/navbar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/front-end/app.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
         </state>
       </provider>
     </entry>
