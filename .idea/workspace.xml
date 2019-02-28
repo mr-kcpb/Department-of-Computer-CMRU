@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebd183e2-5c0a-46b0-8951-f3093ebcb69c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/computer-cmru.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/computer-cmru.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FrontController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back-end/main.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front-end/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/back-end/app.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/back-end/components/head.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/back-end/components/scripts.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front-end/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front-end/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front-end/components/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front-end/components/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front-end/components/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front-end/components/navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front-end/components/topbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front-end/components/topbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,10 +22,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/layouts/front-end/app.blade.php">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="607">
-              <caret line="88" column="51" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
+            <state relative-caret-position="286">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -78,7 +73,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Models/ActivityPages.php" />
         <option value="$PROJECT_DIR$/webpack.mix.js" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/DepartmentPagesController.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
@@ -109,7 +103,6 @@
         <option value="$PROJECT_DIR$/app/Models/Categories.php" />
         <option value="$PROJECT_DIR$/app/Models/Contacts.php" />
         <option value="$PROJECT_DIR$/database/seeds/PrefixSeeder.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/Models/Prefixes.php" />
         <option value="$PROJECT_DIR$/app/Helpers/App.php" />
         <option value="$PROJECT_DIR$/app/Models/Permissions.php" />
@@ -129,6 +122,8 @@
         <option value="$PROJECT_DIR$/resources/views/front-end/home.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/front-end/components/footer.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/front-end/app.blade.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -224,11 +219,16 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
       <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
       <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/spatie/image-optimizer" />
+      <path value="$PROJECT_DIR$/vendor/spatie/once" />
+      <path value="$PROJECT_DIR$/vendor/laravel/nova" />
+      <path value="$PROJECT_DIR$/vendor/froala/nova-froala-field" />
+      <path value="$PROJECT_DIR$/vendor/cakephp/chronos" />
+      <path value="$PROJECT_DIR$/vendor/moontoast/math" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1173" />
-    <option name="y" value="88" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="712" />
   </component>
@@ -399,18 +399,18 @@
       <workItem from="1545741118467" duration="3479000" />
       <workItem from="1545935086761" duration="597000" />
       <workItem from="1546939638110" duration="11151000" />
-      <workItem from="1551325775164" duration="2066000" />
+      <workItem from="1551325775164" duration="2379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27216000" />
+    <option name="totallyTimeSpent" value="27529000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="23" width="1920" height="1057" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="712" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.221875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22109374" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -438,13 +438,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/back-end/components/scripts.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-151">
-          <caret line="65" column="90" lean-forward="true" selection-start-line="65" selection-start-column="90" selection-end-line="65" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/back-end/components/head.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -628,13 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="40" column="10" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Pages.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -801,8 +787,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/front-end/app.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="88" column="51" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
+        <state relative-caret-position="399">
+          <caret line="80" column="58" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
         </state>
       </provider>
     </entry>
