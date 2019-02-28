@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebd183e2-5c0a-46b0-8951-f3093ebcb69c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Nova/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/vendor/nova/partials/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/vendor/nova/partials/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/AnnouncePage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/AnnouncePage.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,10 +16,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/vendor/nova/partials/footer.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Nova/Announce.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="1" column="110" lean-forward="true" selection-start-line="1" selection-start-column="110" selection-end-line="1" selection-end-column="110" />
+            <state relative-caret-position="725">
+              <caret line="70" column="37" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
+              <folding>
+                <element signature="e#28#62#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,8 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Models/Permissions.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_01_08_175134_create_permissions_table.php" />
         <option value="$PROJECT_DIR$/database/seeds/PermissionSeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/front-end/personal.blade.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
@@ -140,6 +140,8 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/app/Nova/User.php" />
         <option value="$PROJECT_DIR$/resources/views/vendor/nova/partials/footer.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/AnnouncePage.php" />
+        <option value="$PROJECT_DIR$/app/Nova/Announce.php" />
       </list>
     </option>
   </component>
@@ -279,6 +281,12 @@
             <path>
               <item name="computer-cmru" type="b2602c69:ProjectViewProjectNode" />
               <item name="computer-cmru" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Nova" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="computer-cmru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="computer-cmru" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -371,12 +379,12 @@
       <workItem from="1545741118467" duration="3479000" />
       <workItem from="1545935086761" duration="597000" />
       <workItem from="1546939638110" duration="11151000" />
-      <workItem from="1551325775164" duration="11983000" />
+      <workItem from="1551325775164" duration="15479000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37133000" />
+    <option name="totallyTimeSpent" value="40629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="23" width="1920" height="992" extended-state="6" />
@@ -411,27 +419,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_20_111437_create_calendars_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_20_111452_create_categories_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_20_111500_create_contacts_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_20_111508_create_department_pages_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
@@ -473,9 +460,6 @@
           <caret line="15" column="87" lean-forward="true" selection-start-line="15" selection-start-column="87" selection-end-line="15" selection-end-column="87" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/AnnouncePage.php">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/Calendar.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -755,8 +739,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/vendor/nova/partials/footer.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="110" lean-forward="true" selection-start-line="1" selection-start-column="110" selection-end-line="1" selection-end-column="110" />
+        <state relative-caret-position="130">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/AnnouncePage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="e#30#69#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova/src/Fields/Text.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nova/src/Element.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="137" lean-forward="true" selection-start-line="137" selection-end-line="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Nova/Announce.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="70" column="37" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
+          <folding>
+            <element signature="e#28#62#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
