@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Categories;
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class CategoriesController extends Controller
@@ -41,10 +41,11 @@ class CategoriesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Categories  $categories
+     * @param  \App\Models\Category $categories
+     *
      * @return \Illuminate\Http\Response
      */
-    public function show(Categories $categories)
+    public function show(Category $categories)
     {
         //
     }
@@ -52,10 +53,11 @@ class CategoriesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Categories  $categories
+     * @param  \App\Models\Category $categories
+     *
      * @return \Illuminate\Http\Response
      */
-    public function edit(Categories $categories)
+    public function edit(Category $categories)
     {
         //
     }
@@ -63,11 +65,12 @@ class CategoriesController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Categories  $categories
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Models\Category     $categories
+     *
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Categories $categories)
+    public function update(Request $request, Category $categories)
     {
         //
     }
@@ -75,10 +78,11 @@ class CategoriesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Categories  $categories
+     * @param  \App\Models\Category $categories
+     *
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Categories $categories)
+    public function destroy(Category $categories)
     {
         //
     }

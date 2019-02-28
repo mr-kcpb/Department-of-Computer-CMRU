@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\AnnouncePages;
+use App\Models\AnnouncePage;
 use Illuminate\Http\Request;
 
 class AnnouncePagesController extends Controller
@@ -41,10 +41,11 @@ class AnnouncePagesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\AnnouncePages  $announcePages
+     * @param  \App\Models\AnnouncePage $announcePages
+     *
      * @return \Illuminate\Http\Response
      */
-    public function show(AnnouncePages $announcePages)
+    public function show(AnnouncePage $announcePages)
     {
         //
     }
@@ -52,10 +53,11 @@ class AnnouncePagesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\AnnouncePages  $announcePages
+     * @param  \App\Models\AnnouncePage $announcePages
+     *
      * @return \Illuminate\Http\Response
      */
-    public function edit(AnnouncePages $announcePages)
+    public function edit(AnnouncePage $announcePages)
     {
         //
     }
@@ -63,11 +65,12 @@ class AnnouncePagesController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\AnnouncePages  $announcePages
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Models\AnnouncePage $announcePages
+     *
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, AnnouncePages $announcePages)
+    public function update(Request $request, AnnouncePage $announcePages)
     {
         //
     }
@@ -75,10 +78,11 @@ class AnnouncePagesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\AnnouncePages  $announcePages
+     * @param  \App\Models\AnnouncePage $announcePages
+     *
      * @return \Illuminate\Http\Response
      */
-    public function destroy(AnnouncePages $announcePages)
+    public function destroy(AnnouncePage $announcePages)
     {
         //
     }

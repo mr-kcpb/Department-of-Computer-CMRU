@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Prefixes extends Model
+class Prefix extends Model
 {
     
     protected $table = 'prefixes';

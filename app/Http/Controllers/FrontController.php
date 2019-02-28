@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Users;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class FrontController extends Controller
@@ -25,8 +25,8 @@ class FrontController extends Controller
     
     public function personnel()
     {
-        $root  = Users::where('root_status', 1)->first();
-        $users = Users::all();
+        $root  = User::where('root_status', 1)->first();
+        $users = User::all();
         
         return view('front-end.personnel', compact('root', 'users'));
     }

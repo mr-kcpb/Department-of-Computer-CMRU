@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class DepartmentPages extends Model
+class AnnouncePage extends Model
 {
     //
 }

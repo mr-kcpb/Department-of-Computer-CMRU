@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Users extends Model
+class User extends Model
 {
     
     protected $table = 'users';
@@ -13,7 +13,7 @@ class Users extends Model
     
     public function prefix()
     {
-        return $this->belongsTo('App\Models\Prefixes', 'prefix_id');
+        return $this->belongsTo('App\Models\Prefix', 'prefix_id');
     }
     
     public function getFullName()

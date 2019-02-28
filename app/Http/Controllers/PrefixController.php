@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Prefixes;
+use App\Models\Prefix;
 use Illuminate\Http\Request;
 
 class PrefixController extends Controller
@@ -41,10 +41,11 @@ class PrefixController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Prefixes  $prefix
+     * @param  \App\Models\Prefix $prefix
+     *
      * @return \Illuminate\Http\Response
      */
-    public function show(Prefixes $prefix)
+    public function show(Prefix $prefix)
     {
         //
     }
@@ -52,10 +53,11 @@ class PrefixController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Prefixes  $prefix
+     * @param  \App\Models\Prefix $prefix
+     *
      * @return \Illuminate\Http\Response
      */
-    public function edit(Prefixes $prefix)
+    public function edit(Prefix $prefix)
     {
         //
     }
@@ -63,11 +65,12 @@ class PrefixController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Prefixes  $prefix
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Models\Prefix       $prefix
+     *
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Prefixes $prefix)
+    public function update(Request $request, Prefix $prefix)
     {
         //
     }
@@ -75,10 +78,11 @@ class PrefixController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Prefixes  $prefix
+     * @param  \App\Models\Prefix $prefix
+     *
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Prefixes $prefix)
+    public function destroy(Prefix $prefix)
     {
         //
     }

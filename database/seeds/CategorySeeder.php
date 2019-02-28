@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\Categories;
+use App\Models\Category;
 
 class CategorySeeder extends Seeder
 {
@@ -12,31 +12,31 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-        Categories::create([
+        Category::create([
             'user_id' => 1,
             'category_name' => 'ภาควิชาคอมพิวเตอร์'
         ]);
-        Categories::create([
+        Category::create([
             'user_id' => 1,
             'category_name' => 'หลักสูตร'
         ]);
-        Categories::create([
+        Category::create([
             'user_id' => 1,
             'category_name' => 'ข่าวสาร'
         ]);
-        Categories::create([
+        Category::create([
             'user_id' => 1,
             'category_name' => 'บุคคลกร'
         ]);
-        Categories::create([
+        Category::create([
             'user_id' => 1,
             'category_name' => 'ปฏิทินวิชาการ'
         ]);
-        Categories::create([
+        Category::create([
             'user_id' => 1,
             'category_name' => 'ติดต่อ'
         ]);
-        Categories::create([
+        Category::create([
             'user_id' => 1,
             'category_name' => 'บริการออนไลน์'
         ]);

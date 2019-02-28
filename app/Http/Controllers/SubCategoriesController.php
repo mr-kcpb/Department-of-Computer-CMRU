@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\SubCategories;
+use App\Models\SubCategory;
 use Illuminate\Http\Request;
 
 class SubCategoriesController extends Controller
@@ -41,10 +41,11 @@ class SubCategoriesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\SubCategories  $subCategories
+     * @param  \App\Models\SubCategory $subCategories
+     *
      * @return \Illuminate\Http\Response
      */
-    public function show(SubCategories $subCategories)
+    public function show(SubCategory $subCategories)
     {
         //
     }
@@ -52,10 +53,11 @@ class SubCategoriesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\SubCategories  $subCategories
+     * @param  \App\Models\SubCategory $subCategories
+     *
      * @return \Illuminate\Http\Response
      */
-    public function edit(SubCategories $subCategories)
+    public function edit(SubCategory $subCategories)
     {
         //
     }
@@ -63,11 +65,12 @@ class SubCategoriesController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\SubCategories  $subCategories
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Models\SubCategory  $subCategories
+     *
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, SubCategories $subCategories)
+    public function update(Request $request, SubCategory $subCategories)
     {
         //
     }
@@ -75,10 +78,11 @@ class SubCategoriesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\SubCategories  $subCategories
+     * @param  \App\Models\SubCategory $subCategories
+     *
      * @return \Illuminate\Http\Response
      */
-    public function destroy(SubCategories $subCategories)
+    public function destroy(SubCategory $subCategories)
     {
         //
     }

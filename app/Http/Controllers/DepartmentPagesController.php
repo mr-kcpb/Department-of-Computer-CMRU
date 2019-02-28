@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\DepartmentPages;
+use App\Models\DepartmentPage;
 use Illuminate\Http\Request;
 
 class DepartmentPagesController extends Controller
@@ -41,10 +41,11 @@ class DepartmentPagesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\DepartmentPages $departmentPages
+     * @param  \App\Models\DepartmentPage $departmentPages
+     *
      * @return \Illuminate\Http\Response
      */
-    public function show(DepartmentPages $departmentPages)
+    public function show(DepartmentPage $departmentPages)
     {
         //
     }
@@ -52,10 +53,11 @@ class DepartmentPagesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\DepartmentPages $departmentPages
+     * @param  \App\Models\DepartmentPage $departmentPages
+     *
      * @return \Illuminate\Http\Response
      */
-    public function edit(DepartmentPages $departmentPages)
+    public function edit(DepartmentPage $departmentPages)
     {
         //
     }
@@ -63,11 +65,12 @@ class DepartmentPagesController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
-     * @param  \App\Models\DepartmentPages $departmentPages
+     * @param  \Illuminate\Http\Request   $request
+     * @param  \App\Models\DepartmentPage $departmentPages
+     *
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, DepartmentPages $departmentPages)
+    public function update(Request $request, DepartmentPage $departmentPages)
     {
         //
     }
@@ -75,10 +78,11 @@ class DepartmentPagesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\DepartmentPages $departmentPages
+     * @param  \App\Models\DepartmentPage $departmentPages
+     *
      * @return \Illuminate\Http\Response
      */
-    public function destroy(DepartmentPages $departmentPages)
+    public function destroy(DepartmentPage $departmentPages)
     {
         //
     }

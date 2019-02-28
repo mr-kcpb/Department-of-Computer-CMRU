@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Users;
+use App\Models\User;
 
 function createUser($data)
 {
@@ -18,15 +18,15 @@ function createUser($data)
         : $data['root_status'];
     
     try {
-        $lastUserId = \App\Models\Users::orderBy('id', 'desc')
-            ->limit(1)
-            ->firstOrFail();
+        $lastUserId = \App\Models\User::orderBy('id', 'desc')
+                                      ->limit(1)
+                                      ->firstOrFail();
         $lastUserId = $lastUserId->id + 1;
     } catch (Exception $e) {
         $lastUserId = 1; // First id
     }
     
-    Users::create(
+    User::create(
         [
             'prefix_id'   => is_null($prefix_id) ? 2 : $prefix_id,
             'first_name'  => is_null($first_name) ? 'first_name_'

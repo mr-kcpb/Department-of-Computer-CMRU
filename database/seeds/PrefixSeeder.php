@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Models\Prefixes;
+use App\Models\Prefix;
 
 class PrefixSeeder extends Seeder
 {
@@ -13,8 +13,8 @@ class PrefixSeeder extends Seeder
      */
     public function run()
     {
-        Prefixes::create(['prefix_name' => 'คุณ']);
-        Prefixes::create(['prefix_name' => 'อาจารย์']);
-        Prefixes::create(['prefix_name' => 'ผู้ช่วยศาสตราจารย์']);
+        Prefix::create(['prefix_name' => 'คุณ']);
+        Prefix::create(['prefix_name' => 'อาจารย์']);
+        Prefix::create(['prefix_name' => 'ผู้ช่วยศาสตราจารย์']);
     }
 }

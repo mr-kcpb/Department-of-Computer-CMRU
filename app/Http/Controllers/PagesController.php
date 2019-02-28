@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Pages;
+use App\Models\Page;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -41,10 +41,11 @@ class PagesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Pages  $pages
+     * @param  \App\Models\Page $pages
+     *
      * @return \Illuminate\Http\Response
      */
-    public function show(Pages $pages)
+    public function show(Page $pages)
     {
         //
     }
@@ -52,10 +53,11 @@ class PagesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Pages  $pages
+     * @param  \App\Models\Page $pages
+     *
      * @return \Illuminate\Http\Response
      */
-    public function edit(Pages $pages)
+    public function edit(Page $pages)
     {
         //
     }
@@ -63,11 +65,12 @@ class PagesController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Pages  $pages
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Models\Page         $pages
+     *
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Pages $pages)
+    public function update(Request $request, Page $pages)
     {
         //
     }
@@ -75,10 +78,11 @@ class PagesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Pages  $pages
+     * @param  \App\Models\Page $pages
+     *
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Pages $pages)
+    public function destroy(Page $pages)
     {
         //
     }

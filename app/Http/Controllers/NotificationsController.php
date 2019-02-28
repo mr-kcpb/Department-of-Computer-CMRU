@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Notifications;
+use App\Models\Notification;
 use Illuminate\Http\Request;
 
 class NotificationsController extends Controller
@@ -41,10 +41,11 @@ class NotificationsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Notifications  $notifications
+     * @param  \App\Models\Notification $notifications
+     *
      * @return \Illuminate\Http\Response
      */
-    public function show(Notifications $notifications)
+    public function show(Notification $notifications)
     {
         //
     }
@@ -52,10 +53,11 @@ class NotificationsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Notifications  $notifications
+     * @param  \App\Models\Notification $notifications
+     *
      * @return \Illuminate\Http\Response
      */
-    public function edit(Notifications $notifications)
+    public function edit(Notification $notifications)
     {
         //
     }
@@ -63,11 +65,12 @@ class NotificationsController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Notifications  $notifications
+     * @param  \Illuminate\Http\Request $request
+     * @param  \App\Models\Notification $notifications
+     *
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Notifications $notifications)
+    public function update(Request $request, Notification $notifications)
     {
         //
     }
@@ -75,10 +78,11 @@ class NotificationsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Notifications  $notifications
+     * @param  \App\Models\Notification $notifications
+     *
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Notifications $notifications)
+    public function destroy(Notification $notifications)
     {
         //
     }
