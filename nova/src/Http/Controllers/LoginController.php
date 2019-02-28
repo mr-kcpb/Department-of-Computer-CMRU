@@ -78,4 +78,9 @@ class LoginController extends Controller
     {
         return Auth::guard(config('nova.guard'));
     }
+    
+    public function username()
+    {
+        return 'username';
+    }
 }

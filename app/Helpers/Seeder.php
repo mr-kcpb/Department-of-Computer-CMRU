@@ -18,12 +18,12 @@ function createUser($data)
         : $data['root_status'];
     
     try {
-        $lastUserId = \App\Models\Users::orderBy('user_id', 'desc')
+        $lastUserId = \App\Models\Users::orderBy('id', 'desc')
             ->limit(1)
             ->firstOrFail();
-        $lastUserId = $lastUserId->user_id + 1;
+        $lastUserId = $lastUserId->id + 1;
     } catch (Exception $e) {
-        $lastUserId = 1; // First user_id
+        $lastUserId = 1; // First id
     }
     
     Users::create(
@@ -38,7 +38,7 @@ function createUser($data)
             'work_status' => is_null($work_status) ? 1 : $work_status,
             'username'    => is_null($username) ? 'user' . $lastUserId
                 : $username,
-            'password'    => is_null($password) ? bcrypt('1234') : $password,
+            'password'    => is_null($password) ? bcrypt('123456') : $password,
             'email'       => is_null($email) ? 'demo_mail_' . $lastUserId
                 . '@gmail.com' : $email,
             'line_id'     => is_null($line_id) ? 'demo_line_' . $lastUserId

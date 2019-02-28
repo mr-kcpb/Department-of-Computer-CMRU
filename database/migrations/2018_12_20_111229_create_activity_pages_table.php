@@ -14,7 +14,7 @@ class CreateActivityPagesTable extends Migration
     public function up()
     {
         Schema::create('activity_pages', function (Blueprint $table) {
-            $table->increments('activity_id');
+            $table->increments('id');
             $table->unsignedInteger('user_id');
             $table->string('title');
             $table->text('detail');

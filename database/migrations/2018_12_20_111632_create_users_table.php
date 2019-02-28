@@ -14,7 +14,7 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->increments('user_id');
+            $table->increments('id');
             $table->unsignedInteger('prefix_id');
             $table->string('first_name');
             $table->string('last_name');
@@ -33,43 +33,43 @@ class CreateUsersTable extends Migration
 
         Schema::table('users', function (Blueprint $table) {
             $table->foreign('prefix_id')
-                ->references('prefix_id')
+                ->references('id')
                 ->on('prefixes');
         });
 
         Schema::table('activity_pages', function (Blueprint $table) {
             $table->foreign('user_id')
-                ->references('user_id')
+                ->references('id')
                 ->on('users');
         });
 
         Schema::table('announce_pages', function (Blueprint $table) {
             $table->foreign('user_id')
-                ->references('user_id')
+                ->references('id')
                 ->on('users');
         });
 
         Schema::table('calendars', function (Blueprint $table) {
             $table->foreign('user_id')
-                ->references('user_id')
+                ->references('id')
                 ->on('users');
         });
 
         Schema::table('categories', function (Blueprint $table) {
             $table->foreign('user_id')
-                ->references('user_id')
+                ->references('id')
                 ->on('users');
         });
 
         Schema::table('department_pages', function (Blueprint $table) {
             $table->foreign('user_id')
-                ->references('user_id')
+                ->references('id')
                 ->on('users');
         });
 
         Schema::table('logs', function (Blueprint $table) {
             $table->foreign('user_id')
-                ->references('user_id')
+                ->references('id')
                 ->on('users');
         });
     }

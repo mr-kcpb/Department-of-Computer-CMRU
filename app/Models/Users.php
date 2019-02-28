@@ -7,12 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Users extends Model
 {
     
-    protected $primaryKey = 'user_id';
-    
     protected $table = 'users';
-    
     protected $guarded = [];
-    
     protected $dates = ['deleted_at'];
     
     public function prefix()
@@ -23,11 +19,13 @@ class Users extends Model
     public function getFullName()
     {
         return $this->attributes['first_name'] . ' '
-            . $this->attributes['last_name'];
+               . $this->attributes['last_name'];
     }
     
     public function image()
     {
-        return asset('storage/personnel/' . $this->attributes['user_id'] . '.jpg');
+        return asset(
+            'storage/personnel/' . $this->attributes['id'] . '.jpg'
+        );
     }
 }
