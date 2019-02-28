@@ -64,6 +64,14 @@
             color: #00b300 !important;
         }
 
+        .text-primary, .text-primary > * {
+            color: #3366ff !important;
+        }
+
+        .text-danger, .text-danger > * {
+            color: #ff5050 !important;
+        }
+
         p {
             font-size: 16px;
         }

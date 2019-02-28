@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class Announce extends Resource
+class Activity extends Resource
 {
     
     /**
@@ -17,7 +17,7 @@ class Announce extends Resource
      *
      * @var string
      */
-    public static $model = 'App\Models\AnnouncePage';
+    public static $model = 'App\Models\ActivityPage';
     
     /**
      * The single value that should be used to represent the resource when
@@ -49,7 +49,7 @@ class Announce extends Resource
     {
         return [
             ID::make()->sortable(),
-            
+    
             Text::make('Create by User ID', 'user_id')
                 ->withMeta(['value' => Auth::user()->id])
                 ->withMeta([
@@ -57,11 +57,11 @@ class Announce extends Resource
                         'readonly' => true,
                     ],
                 ]),
-            
+    
             Text::make('Title')
                 ->sortable()
                 ->rules('required', 'max:255'),
-            
+    
             Froala::make('Detail')
                   ->rules('required')
                   ->hideFromIndex()
