@@ -105,6 +105,7 @@
 <script src="{{ asset('template/front-end/js/jquery.countTo.js') }}"></script>
 <script src="{{ asset('template/front-end/js/custom.js') }}"></script>
 <script src="{{ asset('js/response.min.js') }}"></script>
+{{--<script src="{{ asset('template/front-end/js/main.js') }}"></script>--}}
 
 <script>
     $(document).ready(function () {
