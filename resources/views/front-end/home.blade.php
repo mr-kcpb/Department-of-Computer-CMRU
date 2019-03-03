@@ -5,7 +5,7 @@
             <div class="divider-1"></div>
 
             <div class="block-heading-two">
-                <h3><span>กิจกรรมล่าสุด</span></h3>
+                <h3><span>กิจกรรมภาควิชาฯ</span></h3>
             </div>
             <div class="row">
                 <div class="col-xs-12">
@@ -96,7 +96,7 @@
                 <h3><span>ข่าวประชาสัมพันธ์</span></h3>
             </div>
             <div class="row">
-                <div class="col-md-12 col-sm-6">
+                <div class="col-xs-12 col-md-8">
                     <div class="panel-group accordion-alt3" id="accordion-alt3">
                         @foreach ($announces as $announce)
                             <a href="{{ route('get.announce', ['id' => $announce->id]) }}">
@@ -115,31 +115,62 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <br/>
-            <div class="block-heading-two">
-                <h3><span>กิจกรรมภาควิชาฯ</span></h3>
-            </div>
-            <div class="row">
-                <div class="col-md-12 col-sm-6">
-                    @foreach ($activities as $activity)
-                        <a href="{{ route('get.activity', ['id' => $activity->id]) }}">
-                            <p class="text-danger">
-                                {{ $activity->created_at }}&ensp;{{ $activity->title }}
-                            </p>
-                        </a>
-                    @endforeach
-                    <div class="form-group text-right">
-                        <a href="#">
-                            <small>
-                                กิจกรรมภาควิชาฯ ทั้งหมด
-                                <i class="fa fa-angle-double-right"></i>
-                            </small>
-                        </a>
+                <div class="col-xs-12 col-md-4">
+                    <div class="form-group">
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCMRUCOMPUTER%2F&tabs=timeline&width=340&height=215&small_header=false&adapt_container_width=false&hide_cover=false&show_facepile=true&appId=319916248660520"
+                            width="340" height="215" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowTransparency="true" allow="encrypted-media"></iframe>
                     </div>
                 </div>
             </div>
+            <br/>
+            {{--<div class="block-heading-two">--}}
+            {{--<h3><span>กิจกรรมภาควิชาฯ</span></h3>--}}
+            {{--</div>--}}
+            {{--<div class="row">--}}
+            {{--<div class="col-md-12 col-sm-6">--}}
+            {{--@foreach ($activities as $activity)--}}
+            {{--<a href="{{ route('get.activity', ['id' => $activity->id]) }}">--}}
+            {{--<p class="text-danger">--}}
+            {{--{{ $activity->created_at }}&ensp;{{ $activity->title }}--}}
+            {{--</p>--}}
+            {{--</a>--}}
+            {{--@endforeach--}}
+            {{--<div class="form-group text-right">--}}
+            {{--<a href="#">--}}
+            {{--<small>--}}
+            {{--กิจกรรมภาควิชาฯ ทั้งหมด--}}
+            {{--<i class="fa fa-angle-double-right"></i>--}}
+            {{--</small>--}}
+            {{--</a>--}}
+            {{--</div>--}}
+            {{--</div>--}}
+            {{--</div>--}}
 
         </div>
     </div>
+
+    {{--<div class="quote-two">--}}
+        {{--<!-- Container -->--}}
+        {{--<div class="container">--}}
+            {{--<!-- Quote Two Content -->--}}
+            {{--<div class="quote-two-content">--}}
+                {{--<span>“</span>--}}
+                {{--<div class="owl-carousel owl-theme" data-items="1" data-auto-play="true" data-pagination="true"--}}
+                     {{--data-single-item="true" style="opacity: 1; display: block;">--}}
+                    {{--<!-- Item -->--}}
+                    {{--<div class="owl-wrapper-outer">--}}
+                        {{--<div class="owl-wrapper">--}}
+                            {{--<div class="owl-item" style="width: 900px;">--}}
+                                {{--<div class="item">--}}
+                                    {{--<h3>คำอธิบายเกี่ยวกับภาควิชาฯ</h3>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
 @endsection
