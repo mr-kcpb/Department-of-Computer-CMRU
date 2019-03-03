@@ -6,6 +6,7 @@ use Froala\NovaFroalaField\Froala;
 use Illuminate\Support\Facades\Auth;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
@@ -49,7 +50,7 @@ class Activity extends Resource
     {
         return [
             ID::make()->sortable(),
-    
+            
             Text::make('Create by User ID', 'user_id')
                 ->withMeta(['value' => Auth::user()->id])
                 ->withMeta([
@@ -57,11 +58,14 @@ class Activity extends Resource
                         'readonly' => true,
                     ],
                 ]),
-    
+            
+            Image::make('Image', 'cover_image')
+                 ->rules('required'),
+            
             Text::make('Title')
                 ->sortable()
                 ->rules('required', 'max:255'),
-    
+            
             Froala::make('Detail')
                   ->rules('required')
                   ->hideFromIndex()

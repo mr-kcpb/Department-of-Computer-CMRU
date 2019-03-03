@@ -21,70 +21,87 @@
                         <div class="owl-carousel" data-items="4" data-auto-play="true" data-pagination="false"
                              data-single-item="false">
                             <!-- Carousel item -->
-                            <div class="owl-content">
-                                <a href="{{ asset('template/front-end/img/gallery/small/1.jpg') }}"
-                                   class="lightbox"><img src="{{ asset('template/front-end/img/gallery/small/1.jpg') }}"
-                                                         alt="" class="img-responsive img-thumbnail"/></a>
-                                <h4><a href="#">Some heading here now</a></h4>
-                                <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
-                                <a href="#" class="btn btn-color btn-xs">Read more</a>
-                            </div>
-                            <div class="owl-content">
-                                <a href="{{ asset('template/front-end/img/gallery/small/2.jpg') }}"
-                                   class="lightbox"><img src="{{ asset('template/front-end/img/gallery/small/2.jpg') }}"
-                                                         alt="" class="img-responsive img-thumbnail"/></a>
-                                <h4><a href="#">Some heading here now</a></h4>
-                                <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
-                                <a href="#" class="btn btn-color btn-xs">Read more</a>
-                            </div>
-                            <div class="owl-content">
-                                <a href="{{ asset('template/front-end/img/gallery/small/3.jpg') }}"
-                                   class="lightbox"><img src="{{ asset('template/front-end/img/gallery/small/3.jpg') }}"
-                                                         alt="" class="img-responsive img-thumbnail"/></a>
-                                <h4><a href="#">Some heading here now</a></h4>
-                                <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
-                                <a href="#" class="btn btn-color btn-xs">Read more</a>
-                            </div>
-                            <div class="owl-content">
-                                <a href="{{ asset('template/front-end/img/gallery/small/4.jpg') }}"
-                                   class="lightbox"><img src="{{ asset('template/front-end/img/gallery/small/4.jpg') }}"
-                                                         alt="" class="img-responsive img-thumbnail"/></a>
-                                <h4><a href="#">Some heading here now</a></h4>
-                                <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
-                                <a href="#" class="btn btn-color btn-xs">Read more</a>
-                            </div>
-                            <div class="owl-content">
-                                <a href="{{ asset('template/front-end/img/gallery/small/5.jpg') }}"
-                                   class="lightbox"><img src="{{ asset('template/front-end/img/gallery/small/5.jpg') }}"
-                                                         alt="" class="img-responsive img-thumbnail"/></a>
-                                <h4><a href="#">Some heading here now</a></h4>
-                                <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
-                                <a href="#" class="btn btn-color btn-xs">Read more</a>
-                            </div>
-                            <div class="owl-content">
-                                <a href="{{ asset('template/front-end/img/gallery/small/6.jpg') }}"
-                                   class="lightbox"><img src="{{ asset('template/front-end/img/gallery/small/6.jpg') }}"
-                                                         alt="" class="img-responsive img-thumbnail"/></a>
-                                <h4><a href="#">Some heading here now</a></h4>
-                                <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
-                                <a href="#" class="btn btn-color btn-xs">Read more</a>
-                            </div>
-                            <div class="owl-content">
-                                <a href="{{ asset('template/front-end/img/gallery/small/7.jpg') }}"
-                                   class="lightbox"><img src="{{ asset('template/front-end/img/gallery/small/7.jpg') }}"
-                                                         alt="" class="img-responsive img-thumbnail"/></a>
-                                <h4><a href="#">Some heading here now</a></h4>
-                                <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
-                                <a href="#" class="btn btn-color btn-xs">Read more</a>
-                            </div>
-                            <div class="owl-content">
-                                <a href="{{ asset('template/front-end/img/gallery/small/8.jpg') }}"
-                                   class="lightbox"><img src="{{ asset('template/front-end/img/gallery/small/8.jpg') }}"
-                                                         alt="" class="img-responsive img-thumbnail"/></a>
-                                <h4><a href="#">Some heading here now</a></h4>
-                                <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>
-                                <a href="#" class="btn btn-color btn-xs">Read more</a>
-                            </div>
+
+                            @foreach ($activities as $activity)
+
+                                <div class="owl-content">
+                                    <a href="{{ asset('storage/'.$activity->cover_image) }}"
+                                       class="lightbox"><img src="{{ asset('storage/'.$activity->cover_image) }}"
+                                                             alt="" class="img-responsive img-thumbnail"/></a>
+                                    <h4>
+                                        <a href="{{ route('get.activity', ['id' => $activity->id]) }}">{{ $activity->title }}</a>
+                                    </h4>
+                                    <p>{{ $activity->shortDetail() }}</p>
+                                    <a href="{{ route('get.activity', ['id' => $activity->id]) }}"
+                                       class="btn btn-color btn-xs">รายละเอียด</a>
+                                </div>
+
+                            @endforeach
+
+                            {{--<div class="owl-content">--}}
+                            {{--<a href="{{ asset('template/front-end/img/gallery/small/1.jpg') }}"--}}
+                            {{--class="lightbox"><img src="{{ asset('template/front-end/img/gallery/small/1.jpg') }}"--}}
+                            {{--alt="" class="img-responsive img-thumbnail"/></a>--}}
+                            {{--<h4><a href="#">Some heading here now</a></h4>--}}
+                            {{--<p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>--}}
+                            {{--<a href="#" class="btn btn-color btn-xs">Read more</a>--}}
+                            {{--</div>--}}
+                            {{--<div class="owl-content">--}}
+                            {{--<a href="{{ asset('template/front-end/img/gallery/small/2.jpg') }}"--}}
+                            {{--class="lightbox"><img src="{{ asset('template/front-end/img/gallery/small/2.jpg') }}"--}}
+                            {{--alt="" class="img-responsive img-thumbnail"/></a>--}}
+                            {{--<h4><a href="#">Some heading here now</a></h4>--}}
+                            {{--<p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>--}}
+                            {{--<a href="#" class="btn btn-color btn-xs">Read more</a>--}}
+                            {{--</div>--}}
+                            {{--<div class="owl-content">--}}
+                            {{--<a href="{{ asset('template/front-end/img/gallery/small/3.jpg') }}"--}}
+                            {{--class="lightbox"><img src="{{ asset('template/front-end/img/gallery/small/3.jpg') }}"--}}
+                            {{--alt="" class="img-responsive img-thumbnail"/></a>--}}
+                            {{--<h4><a href="#">Some heading here now</a></h4>--}}
+                            {{--<p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>--}}
+                            {{--<a href="#" class="btn btn-color btn-xs">Read more</a>--}}
+                            {{--</div>--}}
+                            {{--<div class="owl-content">--}}
+                            {{--<a href="{{ asset('template/front-end/img/gallery/small/4.jpg') }}"--}}
+                            {{--class="lightbox"><img src="{{ asset('template/front-end/img/gallery/small/4.jpg') }}"--}}
+                            {{--alt="" class="img-responsive img-thumbnail"/></a>--}}
+                            {{--<h4><a href="#">Some heading here now</a></h4>--}}
+                            {{--<p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>--}}
+                            {{--<a href="#" class="btn btn-color btn-xs">Read more</a>--}}
+                            {{--</div>--}}
+                            {{--<div class="owl-content">--}}
+                            {{--<a href="{{ asset('template/front-end/img/gallery/small/5.jpg') }}"--}}
+                            {{--class="lightbox"><img src="{{ asset('template/front-end/img/gallery/small/5.jpg') }}"--}}
+                            {{--alt="" class="img-responsive img-thumbnail"/></a>--}}
+                            {{--<h4><a href="#">Some heading here now</a></h4>--}}
+                            {{--<p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>--}}
+                            {{--<a href="#" class="btn btn-color btn-xs">Read more</a>--}}
+                            {{--</div>--}}
+                            {{--<div class="owl-content">--}}
+                            {{--<a href="{{ asset('template/front-end/img/gallery/small/6.jpg') }}"--}}
+                            {{--class="lightbox"><img src="{{ asset('template/front-end/img/gallery/small/6.jpg') }}"--}}
+                            {{--alt="" class="img-responsive img-thumbnail"/></a>--}}
+                            {{--<h4><a href="#">Some heading here now</a></h4>--}}
+                            {{--<p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>--}}
+                            {{--<a href="#" class="btn btn-color btn-xs">Read more</a>--}}
+                            {{--</div>--}}
+                            {{--<div class="owl-content">--}}
+                            {{--<a href="{{ asset('template/front-end/img/gallery/small/7.jpg') }}"--}}
+                            {{--class="lightbox"><img src="{{ asset('template/front-end/img/gallery/small/7.jpg') }}"--}}
+                            {{--alt="" class="img-responsive img-thumbnail"/></a>--}}
+                            {{--<h4><a href="#">Some heading here now</a></h4>--}}
+                            {{--<p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>--}}
+                            {{--<a href="#" class="btn btn-color btn-xs">Read more</a>--}}
+                            {{--</div>--}}
+                            {{--<div class="owl-content">--}}
+                            {{--<a href="{{ asset('template/front-end/img/gallery/small/8.jpg') }}"--}}
+                            {{--class="lightbox"><img src="{{ asset('template/front-end/img/gallery/small/8.jpg') }}"--}}
+                            {{--alt="" class="img-responsive img-thumbnail"/></a>--}}
+                            {{--<h4><a href="#">Some heading here now</a></h4>--}}
+                            {{--<p>Ad vegan excepteur butcher vice lomo. Leggings occaecat raw denim aesthetic. </p>--}}
+                            {{--<a href="#" class="btn btn-color btn-xs">Read more</a>--}}
+                            {{--</div>--}}
                         </div>
                         <!-- Owl carousel block ends -->
 
@@ -152,25 +169,25 @@
     </div>
 
     {{--<div class="quote-two">--}}
-        {{--<!-- Container -->--}}
-        {{--<div class="container">--}}
-            {{--<!-- Quote Two Content -->--}}
-            {{--<div class="quote-two-content">--}}
-                {{--<span>“</span>--}}
-                {{--<div class="owl-carousel owl-theme" data-items="1" data-auto-play="true" data-pagination="true"--}}
-                     {{--data-single-item="true" style="opacity: 1; display: block;">--}}
-                    {{--<!-- Item -->--}}
-                    {{--<div class="owl-wrapper-outer">--}}
-                        {{--<div class="owl-wrapper">--}}
-                            {{--<div class="owl-item" style="width: 900px;">--}}
-                                {{--<div class="item">--}}
-                                    {{--<h3>คำอธิบายเกี่ยวกับภาควิชาฯ</h3>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
+    {{--<!-- Container -->--}}
+    {{--<div class="container">--}}
+    {{--<!-- Quote Two Content -->--}}
+    {{--<div class="quote-two-content">--}}
+    {{--<span>“</span>--}}
+    {{--<div class="owl-carousel owl-theme" data-items="1" data-auto-play="true" data-pagination="true"--}}
+    {{--data-single-item="true" style="opacity: 1; display: block;">--}}
+    {{--<!-- Item -->--}}
+    {{--<div class="owl-wrapper-outer">--}}
+    {{--<div class="owl-wrapper">--}}
+    {{--<div class="owl-item" style="width: 900px;">--}}
+    {{--<div class="item">--}}
+    {{--<h3>คำอธิบายเกี่ยวกับภาควิชาฯ</h3>--}}
+    {{--</div>--}}
+    {{--</div>--}}
+    {{--</div>--}}
+    {{--</div>--}}
+    {{--</div>--}}
+    {{--</div>--}}
+    {{--</div>--}}
     {{--</div>--}}
 @endsection
