@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebd183e2-5c0a-46b0-8951-f3093ebcb69c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Nova/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FrontController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front-end/news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/news.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,13 +17,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Nova/Category.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/front-end/news.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="771">
-              <caret line="60" column="69" selection-start-line="60" selection-start-column="69" selection-end-line="60" selection-end-column="69" />
-              <folding>
-                <element signature="e#28#55#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="529">
+              <caret line="69" column="51" selection-start-line="69" selection-start-column="51" selection-end-line="69" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -115,7 +113,6 @@
         <option value="$PROJECT_DIR$/resources/views/vendor/nova/partials/footer.blade.php" />
         <option value="$PROJECT_DIR$/nova/resources/views/partials/footer.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/front-end/components/footer.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/FrontController.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_20_111229_create_activity_pages_table.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/front-end/app.blade.php" />
@@ -125,7 +122,6 @@
         <option value="$PROJECT_DIR$/database/seeds/SubCategorySeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/front-end/components/navbar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/front-end/contact.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/front-end/news.blade.php" />
         <option value="$PROJECT_DIR$/database/factories/ActivityPagesFactory.php" />
         <option value="$PROJECT_DIR$/app/Models/ActivityPage.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
@@ -148,6 +144,8 @@
         <option value="$PROJECT_DIR$/database/migrations/2018_12_20_111602_create_pages_table.php" />
         <option value="$PROJECT_DIR$/app/Nova/Page.php" />
         <option value="$PROJECT_DIR$/app/Nova/Category.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/FrontController.php" />
+        <option value="$PROJECT_DIR$/resources/views/front-end/news.blade.php" />
       </list>
     </option>
   </component>
@@ -389,12 +387,12 @@
       <workItem from="1546939638110" duration="11151000" />
       <workItem from="1551325775164" duration="15652000" />
       <workItem from="1551392319338" duration="3699000" />
-      <workItem from="1551640781290" duration="14872000" />
+      <workItem from="1551640781290" duration="15270000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59373000" />
+    <option name="totallyTimeSpent" value="59771000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="23" width="1920" height="992" extended-state="0" />
@@ -502,16 +500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FrontController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -630,13 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/front-end/news.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="34" column="44" lean-forward="true" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Models/ActivityPage.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="581">
@@ -654,13 +635,6 @@
           <folding>
             <element signature="e#30#48#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/front-end/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="120" column="102" lean-forward="true" selection-start-line="120" selection-start-column="102" selection-end-line="120" selection-end-column="102" />
         </state>
       </provider>
     </entry>
@@ -800,11 +774,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Nova/Category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="771">
-          <caret line="60" column="69" selection-start-line="60" selection-start-column="69" selection-end-line="60" selection-end-column="69" />
+        <state relative-caret-position="251">
+          <caret line="40" column="7" lean-forward="true" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
           <folding>
             <element signature="e#28#55#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FrontController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="27" column="55" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/front-end/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="767">
+          <caret line="133" column="30" lean-forward="true" selection-start-line="133" selection-start-column="30" selection-end-line="133" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/front-end/news.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="69" column="51" selection-start-line="69" selection-start-column="51" selection-end-line="69" selection-end-column="51" />
         </state>
       </provider>
     </entry>

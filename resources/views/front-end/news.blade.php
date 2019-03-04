@@ -23,37 +23,52 @@
                     <div class="panel-group accordion-alt3" id="accordion-alt3">
                         <!-- Panel. Use "panel-XXX" class for different colors. Replace "XXX" with color. -->
 
-                        @for($i = 0; $i <= 10; $i++)
+                        @foreach ($announces as $announce)
 
                             <div class="panel">
                                 <!-- Panel heading -->
+
                                 <div class="panel-heading">
                                     <h4 class="panel-title">
-                                        01/12/2017 &ensp;
-                                        <a data-toggle="collapse" data-parent="#accordion-alt3" href="#">
-                                            <i class="fa fa-angle-right"></i> Minimal Collapsible Group Item #1
+                                        <span style="font-size: 16px">{{ $announce->created_at }} &ensp;</span>
+                                        <a href="{{ route('get.announce', ['id' => $announce->id]) }}"
+                                           style="font-size: 16px">
+                                            <i class="fa fa-angle-right"></i> {{ $announce->title }}
                                         </a>
                                     </h4>
                                 </div>
+
+                                {{--<div class="panel-heading">--}}
+                                {{--<h4 class="panel-title">--}}
+                                {{--01/12/2017 &ensp;--}}
+                                {{--<a data-toggle="collapse" data-parent="#accordion-alt3" href="#">--}}
+                                {{--<i class="fa fa-angle-right"></i> Minimal Collapsible Group Item #1--}}
+                                {{--</a>--}}
+                                {{--</h4>--}}
+                                {{--</div>--}}
                                 {{--<div id="collapseOne-alt3" class="panel-collapse collapse">--}}
-                                    {{--<!-- Panel body -->--}}
-                                    {{--<div class="panel-body">--}}
-                                        {{--Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry--}}
-                                        {{--richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor--}}
-                                        {{--brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt--}}
-                                        {{--aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.--}}
-                                        {{--Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente--}}
-                                        {{--ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer--}}
-                                        {{--farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them--}}
-                                        {{--accusamus labore sustainable VHS.--}}
-                                    {{--</div>--}}
+                                {{--<!-- Panel body -->--}}
+                                {{--<div class="panel-body">--}}
+                                {{--Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry--}}
+                                {{--richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor--}}
+                                {{--brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt--}}
+                                {{--aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.--}}
+                                {{--Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente--}}
+                                {{--ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer--}}
+                                {{--farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them--}}
+                                {{--accusamus labore sustainable VHS.--}}
+                                {{--</div>--}}
                                 {{--</div>--}}
                             </div>
 
-                        @endfor
+                        @endforeach
 
                     </div>
                     <!-- Accordion ends -->
+
+                    <div class="form-group text-right">
+                        {!! $announces->links() !!}
+                    </div>
 
                 </div>
 

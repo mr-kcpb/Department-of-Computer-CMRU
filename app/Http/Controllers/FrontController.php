@@ -12,7 +12,7 @@ class FrontController extends Controller
     
     public function home()
     {
-        $announces = AnnouncePage::latest()->paginate(10);
+        $announces  = AnnouncePage::latest()->paginate(10);
         $activities = ActivityPage::latest()->paginate(10);
         
         return view('front-end.home', compact('announces', 'activities'));
@@ -25,7 +25,9 @@ class FrontController extends Controller
     
     public function news()
     {
-        return view('front-end.news');
+        $announces = AnnouncePage::latest()->paginate(20);
+        
+        return view('front-end.news', compact('announces'));
     }
     
     public function personnel()
