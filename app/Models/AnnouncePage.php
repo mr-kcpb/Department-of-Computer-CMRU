@@ -24,4 +24,9 @@ class AnnouncePage extends Model
     {
         return Carbon::parse($value)->addYear(543)->format('d/m/Y');
     }
+    
+    public function shortTitle()
+    {
+        return str_limit(strip_tags($this->attributes['title']), 70);
+    }
 }

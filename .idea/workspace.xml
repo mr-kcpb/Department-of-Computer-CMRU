@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebd183e2-5c0a-46b0-8951-f3093ebcb69c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/database/seeds/CategorySeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CategorySeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front-end/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/contact.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front-end/news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/ActivityPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/ActivityPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/AnnouncePage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/AnnouncePage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ActivityPagesFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ActivityPagesFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/AnnouncePagesFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/AnnouncePagesFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front-end/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/home.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,10 +21,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/front-end/news.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/front-end/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="32" column="103" lean-forward="true" selection-start-line="32" selection-start-column="103" selection-end-line="32" selection-end-column="103" />
+            <state relative-caret-position="559">
+              <caret line="125" column="32" selection-start-line="125" selection-start-column="32" selection-end-line="125" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -30,7 +33,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>is_null</find>
       <find>asset</find>
       <find>permission_id</find>
       <find>personal</find>
@@ -60,6 +62,7 @@
       <find>.quote-two</find>
       <find>'category_id' =&gt; 1,</find>
       <find>'category_id' =&gt; 7,</find>
+      <find>category</find>
     </findStrings>
     <replaceStrings>
       <replace>FrontController</replace>
@@ -96,9 +99,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/database/migrations/2018_12_20_111437_create_calendars_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_12_20_111500_create_contacts_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_12_20_111508_create_department_pages_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_20_111526_create_logs_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_20_111543_create_notifications_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_20_111602_create_pages_table.php" />
@@ -128,15 +128,12 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/ContentController.php" />
         <option value="$PROJECT_DIR$/resources/views/front-end/activity-detail.blade.php" />
-        <option value="$PROJECT_DIR$/app/Models/AnnouncePage.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/FrontController.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_20_111229_create_activity_pages_table.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/front-end/app.blade.php" />
         <option value="$PROJECT_DIR$/public/template/front-end/css/styles/style.css" />
         <option value="$PROJECT_DIR$/app/Nova/Activity.php" />
-        <option value="$PROJECT_DIR$/app/Models/ActivityPage.php" />
-        <option value="$PROJECT_DIR$/resources/views/front-end/home.blade.php" />
         <option value="$PROJECT_DIR$/database/seeds/PageSeeder.php" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_20_111452_create_categories_table.php" />
         <option value="$PROJECT_DIR$/app/Models/Category.php" />
@@ -147,6 +144,12 @@
         <option value="$PROJECT_DIR$/database/seeds/CategorySeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/front-end/contact.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/front-end/news.blade.php" />
+        <option value="$PROJECT_DIR$/database/factories/ActivityPagesFactory.php" />
+        <option value="$PROJECT_DIR$/app/Models/ActivityPage.php" />
+        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/database/factories/AnnouncePagesFactory.php" />
+        <option value="$PROJECT_DIR$/app/Models/AnnouncePage.php" />
+        <option value="$PROJECT_DIR$/resources/views/front-end/home.blade.php" />
       </list>
     </option>
   </component>
@@ -264,52 +267,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="computer-cmru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="computer-cmru" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="computer-cmru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="computer-cmru" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="computer-cmru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="computer-cmru" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="computer-cmru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="computer-cmru" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="seeds" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="computer-cmru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="computer-cmru" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="computer-cmru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="computer-cmru" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="computer-cmru" type="b2602c69:ProjectViewProjectNode" />
-              <item name="computer-cmru" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="front-end" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -370,18 +328,18 @@
       <workItem from="1546939638110" duration="11151000" />
       <workItem from="1551325775164" duration="15652000" />
       <workItem from="1551392319338" duration="3699000" />
-      <workItem from="1551640781290" duration="6727000" />
+      <workItem from="1551640781290" duration="8734000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51228000" />
+    <option name="totallyTimeSpent" value="53235000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="23" width="1920" height="992" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2125" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -410,48 +368,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Http/Controllers/LoginController.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1092">
-          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-          <folding>
-            <element signature="e#45#81#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/vendor/nova/partials/logo.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Routing/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="51" lean-forward="true" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nova/src/PendingRouteRegistration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-          <folding>
-            <element signature="e#32#69#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nova/src/NovaApplicationServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -599,16 +515,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/AnnouncePage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="24" column="16" lean-forward="true" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-          <folding>
-            <element signature="e#30#48#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FrontController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -666,16 +572,6 @@
           <caret line="59" column="19" lean-forward="true" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
           <folding>
             <element signature="e#28#62#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/ActivityPage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="754">
-          <caret line="29" column="71" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
-          <folding>
-            <element signature="e#30#48#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -775,17 +671,75 @@
     <entry file="file://$PROJECT_DIR$/public/template/back-end/vendors/owl.carousel/docs_src/templates/layouts/home.hbs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/front-end/home.blade.php">
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="123" column="35" selection-start-line="123" selection-start-column="35" selection-end-line="123" selection-end-column="35" />
+        <state relative-caret-position="315">
+          <caret line="883" column="13" selection-start-line="883" selection-start-column="13" selection-end-line="883" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Generator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="180" column="29" lean-forward="true" selection-start-line="180" selection-start-column="29" selection-end-line="180" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/ActivityPagesFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="26" lean-forward="true" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/factories/AnnouncePagesFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/front-end/news.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="32" column="103" lean-forward="true" selection-start-line="32" selection-start-column="103" selection-end-line="32" selection-end-column="103" />
+        <state relative-caret-position="413">
+          <caret line="34" column="44" lean-forward="true" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/ActivityPage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="29" column="69" lean-forward="true" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
+          <folding>
+            <element signature="e#30#48#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/AnnouncePage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+          <folding>
+            <element signature="e#30#48#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/front-end/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="125" column="32" selection-start-line="125" selection-start-column="32" selection-end-line="125" selection-end-column="32" />
         </state>
       </provider>
     </entry>

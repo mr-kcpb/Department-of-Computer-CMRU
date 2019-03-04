@@ -25,8 +25,13 @@ class ActivityPage extends Model
         return Carbon::parse($value)->addYear(543)->format('d/m/Y');
     }
     
+    public function shortTitle()
+    {
+        return str_limit(strip_tags($this->attributes['title']), 50);
+    }
+    
     public function shortDetail()
     {
-        return str_limit(strip_tags($this->attributes['detail']), 300);
+        return str_limit(strip_tags($this->attributes['detail']), 150);
     }
 }

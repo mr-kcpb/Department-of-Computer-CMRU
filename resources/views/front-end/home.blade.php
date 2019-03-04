@@ -29,7 +29,7 @@
                                        class="lightbox"><img src="{{ asset('storage/'.$activity->cover_image) }}"
                                                              alt="" class="img-responsive img-thumbnail"/></a>
                                     <h4>
-                                        <a href="{{ route('get.activity', ['id' => $activity->id]) }}">{{ $activity->title }}</a>
+                                        <a href="{{ route('get.activity', ['id' => $activity->id]) }}">{{ $activity->shortTitle() }}</a>
                                     </h4>
                                     <p>{{ $activity->shortDetail() }}</p>
                                     <a href="{{ route('get.activity', ['id' => $activity->id]) }}"
@@ -117,17 +117,19 @@
                     <div class="panel-group accordion-alt3" id="accordion-alt3">
                         @foreach ($announces as $announce)
                             <a href="{{ route('get.announce', ['id' => $announce->id]) }}">
-                                <p class="text-success">
-                                    {{ $announce->created_at }}&ensp;{{ $announce->title }}
+                                <p class="text-primary">
+                                    <span class="text-danger">{{ $announce->created_at }}</span>&ensp;
+                                    {{ $announce->shortTitle() }}
                                 </p>
                             </a>
                         @endforeach
+                            <hr>
                         <div class="form-group text-right">
                             <a href="#">
-                                <small>
+                                <p class="text-success">
                                     ข่าวประชาสัมพันธ์ ทั้งหมด
                                     <i class="fa fa-angle-double-right"></i>
-                                </small>
+                                </p>
                             </a>
                         </div>
                     </div>

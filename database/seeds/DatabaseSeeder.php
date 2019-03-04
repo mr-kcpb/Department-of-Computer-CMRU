@@ -17,5 +17,7 @@ class DatabaseSeeder extends Seeder
         $this->call(SubCategorySeeder::class);
         $this->call(PageSeeder::class);
         $this->call(ContactSeeder::class);
+        factory(App\Models\ActivityPage::class, 30)->create();
+        factory(App\Models\AnnouncePage::class, 30)->create();
     }
 }
