@@ -13,15 +13,15 @@ class CreateDepartmentPagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('department_pages', function (Blueprint $table) {
-            $table->increments('id');
-            $table->unsignedInteger('user_id');
-            $table->string('title');
-            $table->text('detail');
-            $table->unsignedInteger('sort');
-            $table->timestamps();
-            $table->softDeletes();
-        });
+//        Schema::create('department_pages', function (Blueprint $table) {
+//            $table->increments('id');
+//            $table->unsignedInteger('user_id');
+//            $table->string('title');
+//            $table->text('detail');
+//            $table->unsignedInteger('sort');
+//            $table->timestamps();
+//            $table->softDeletes();
+//        });
     }
 
     /**
@@ -29,8 +29,8 @@ class CreateDepartmentPagesTable extends Migration
      *
      * @return void
      */
-    public function down()
-    {
-        Schema::dropIfExists('department_pages');
-    }
+//    public function down()
+//    {
+//        Schema::dropIfExists('department_pages');
+//    }
 }

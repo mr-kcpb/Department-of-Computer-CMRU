@@ -55,11 +55,11 @@ class CreateUsersTable extends Migration
                 ->on('users');
         });
 
-        Schema::table('department_pages', function (Blueprint $table) {
-            $table->foreign('user_id')
-                ->references('id')
-                ->on('users');
-        });
+//        Schema::table('department_pages', function (Blueprint $table) {
+//            $table->foreign('user_id')
+//                ->references('id')
+//                ->on('users');
+//        });
 
         Schema::table('logs', function (Blueprint $table) {
             $table->foreign('user_id')
