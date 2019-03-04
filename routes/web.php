@@ -29,4 +29,4 @@ Route::prefix('department')->group(function () {
     Route::get('18', 'DepartmentPagesController@page_18')->name('department.18');
 });
 
-Route::get('main', 'BackController@main')->name('main');
+Route::get('page/{id}', 'ContentController@getPage');

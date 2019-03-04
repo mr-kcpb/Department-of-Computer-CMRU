@@ -49,19 +49,11 @@ class Category extends Resource
     {
         return [
             ID::make()->sortable(),
-
-            Text::make('Create by User ID', 'user_id')
-                ->withMeta(['value' => Auth::user()->id])
-                ->withMeta([
-                    'extraAttributes' => [
-                        'readonly' => true,
-                    ],
-                ])->hideFromIndex(),
             
             Text::make('Category Name')
                 ->sortable()
                 ->rules('required', 'max:255'),
-
+            
             Text::make('Link Page')
                 ->rules('required', 'max:255'),
         ];

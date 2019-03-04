@@ -49,7 +49,7 @@ class Page extends Resource
         return [
             ID::make()->sortable(),
             
-            Text::make('Note')
+            Text::make('Title')
                 ->rules('required', 'max:255'),
             
             Froala::make('Detail')

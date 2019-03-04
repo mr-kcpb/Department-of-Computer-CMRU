@@ -59,14 +59,6 @@ class SubCategory extends Resource
         return [
             ID::make()->sortable(),
             
-            Text::make('Create by User ID', 'user_id')
-                ->withMeta(['value' => Auth::user()->id])
-                ->withMeta([
-                    'extraAttributes' => [
-                        'readonly' => true,
-                    ],
-                ])->hideFromIndex(),
-            
             BelongsTo::make('Category')
                      ->rules('required'),
             
@@ -75,7 +67,12 @@ class SubCategory extends Resource
                 ->rules('required', 'max:255'),
             
             Text::make('Link Page')
-                ->rules('max:255'),
+                ->rules('max:255')
+                ->withMeta([
+                    'extraAttributes' => [
+                        'placeholder' => env('APP_URL') . '/page/{id}',
+                    ],
+                ]),
             
             Boolean::make('New Tab'),
         ];
