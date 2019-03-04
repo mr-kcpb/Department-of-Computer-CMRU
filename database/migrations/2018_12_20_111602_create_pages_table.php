@@ -6,6 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreatePagesTable extends Migration
 {
+    
     /**
      * Run the migrations.
      *
@@ -15,12 +16,13 @@ class CreatePagesTable extends Migration
     {
         Schema::create('pages', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('note');
             $table->text('detail');
             $table->timestamps();
             $table->softDeletes();
         });
     }
-
+    
     /**
      * Reverse the migrations.
      *
