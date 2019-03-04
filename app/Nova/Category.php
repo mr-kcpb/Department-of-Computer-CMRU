@@ -55,7 +55,12 @@ class Category extends Resource
                 ->rules('required', 'max:255'),
             
             Text::make('Link Page')
-                ->rules('required', 'max:255'),
+                ->rules('required', 'max:255')
+                ->withMeta([
+                    'extraAttributes' => [
+                        'placeholder' => env('APP_URL') . '/page/{id}',
+                    ],
+                ]),
         ];
     }
     
