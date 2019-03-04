@@ -6,6 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateSubCategoriesTable extends Migration
 {
+    
     /**
      * Run the migrations.
      *
@@ -19,17 +20,18 @@ class CreateSubCategoriesTable extends Migration
             $table->string('sub_category_name');
             $table->string('link_page')->nullable();
             $table->unsignedInteger('sort');
+            $table->boolean('new_tab')->nullable()->default(false);
             $table->timestamps();
             $table->softDeletes();
         });
-
+        
         Schema::table('sub_categories', function (Blueprint $table) {
             $table->foreign('category_id')
-                ->references('id')
-                ->on('categories');
+                  ->references('id')
+                  ->on('categories');
         });
     }
-
+    
     /**
      * Reverse the migrations.
      *
@@ -37,7 +39,7 @@ class CreateSubCategoriesTable extends Migration
      */
     public function down()
     {
-//        Schema::disableForeignKeyConstraints();
+        //        Schema::disableForeignKeyConstraints();
         Schema::dropIfExists('sub_categories');
     }
 }

@@ -17,6 +17,7 @@ class CreateCategoriesTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('user_id');
             $table->string('category_name');
+            $table->string('link_page')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

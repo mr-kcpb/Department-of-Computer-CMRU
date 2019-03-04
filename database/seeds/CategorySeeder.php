@@ -5,6 +5,7 @@ use App\Models\Category;
 
 class CategorySeeder extends Seeder
 {
+    
     /**
      * Run the database seeds.
      *
@@ -13,32 +14,37 @@ class CategorySeeder extends Seeder
     public function run()
     {
         Category::create([
-            'user_id' => 1,
-            'category_name' => 'ภาควิชาคอมพิวเตอร์'
+            'user_id'       => 1,
+            'category_name' => 'หน้าหลัก',
+            'link_page'     => env('APP_URL'),
         ]);
         Category::create([
-            'user_id' => 1,
-            'category_name' => 'หลักสูตร'
+            'user_id'       => 1,
+            'category_name' => 'ภาควิชาคอมพิวเตอร์',
         ]);
         Category::create([
-            'user_id' => 1,
-            'category_name' => 'ข่าวสาร'
+            'user_id'       => 1,
+            'category_name' => 'หลักสูตร',
         ]);
         Category::create([
-            'user_id' => 1,
-            'category_name' => 'บุคคลกร'
+            'user_id'       => 1,
+            'category_name' => 'ข่าวสาร',
         ]);
         Category::create([
-            'user_id' => 1,
-            'category_name' => 'ปฏิทินวิชาการ'
+            'user_id'       => 1,
+            'category_name' => 'บุคลากร',
         ]);
         Category::create([
-            'user_id' => 1,
-            'category_name' => 'ติดต่อ'
+            'user_id'       => 1,
+            'category_name' => 'ปฏิทินวิชาการ',
         ]);
         Category::create([
-            'user_id' => 1,
-            'category_name' => 'บริการออนไลน์'
+            'user_id'       => 1,
+            'category_name' => 'ติดต่อ',
+        ]);
+        Category::create([
+            'user_id'       => 1,
+            'category_name' => 'บริการออนไลน์',
         ]);
     }
 }

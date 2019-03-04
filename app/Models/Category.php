@@ -11,4 +11,9 @@ class Category extends Model
     protected $guarded = [];
 
     protected $dates = ['deleted_at'];
+    
+    public function sub_category()
+    {
+        return $this->hasMany('App\Models\SubCategory', 'category_id');
+    }
 }
