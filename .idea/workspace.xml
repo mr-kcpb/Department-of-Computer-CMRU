@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebd183e2-5c0a-46b0-8951-f3093ebcb69c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Models/ActivityPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/ActivityPage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Nova/Activity.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/Activity.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/front-end/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front-end/home.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +18,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/front-end/home.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="27" column="91" selection-start-line="27" selection-start-column="91" selection-end-line="27" selection-end-column="91" />
+            <state relative-caret-position="695">
+              <caret line="136" column="408" selection-start-line="136" selection-start-column="408" selection-end-line="136" selection-end-column="408" />
+              <folding>
+                <element signature="e#9516#9551#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -252,7 +253,7 @@
     <option name="x" value="-1920" />
     <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="height" value="992" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -333,15 +334,15 @@
       <workItem from="1546939638110" duration="11151000" />
       <workItem from="1551325775164" duration="15652000" />
       <workItem from="1551392319338" duration="3699000" />
-      <workItem from="1551640781290" duration="3858000" />
+      <workItem from="1551640781290" duration="3957000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48359000" />
+    <option name="totallyTimeSpent" value="48458000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="23" width="1920" height="1057" extended-state="6" />
+    <frame x="-1920" y="23" width="1920" height="992" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2125" />
@@ -737,8 +738,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/front-end/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="27" column="91" selection-start-line="27" selection-start-column="91" selection-end-line="27" selection-end-column="91" />
+        <state relative-caret-position="695">
+          <caret line="136" column="408" selection-start-line="136" selection-start-column="408" selection-end-line="136" selection-end-column="408" />
+          <folding>
+            <element signature="e#9516#9551#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
