@@ -29,10 +29,12 @@ class CategorySeeder extends Seeder
         Category::create([
             'user_id'       => 1,
             'category_name' => 'ข่าวสาร',
+            'link_page'     => env('APP_URL') . '/news',
         ]);
         Category::create([
             'user_id'       => 1,
             'category_name' => 'บุคลากร',
+            'link_page'     => env('APP_URL') . '/personnel',
         ]);
         Category::create([
             'user_id'       => 1,
@@ -41,6 +43,7 @@ class CategorySeeder extends Seeder
         Category::create([
             'user_id'       => 1,
             'category_name' => 'ติดต่อ',
+            'link_page'     => env('APP_URL') . '/contact',
         ]);
         Category::create([
             'user_id'       => 1,
