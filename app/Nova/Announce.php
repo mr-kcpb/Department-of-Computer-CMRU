@@ -12,6 +12,7 @@ use Laravel\Nova\Http\Requests\NovaRequest;
 class Announce extends Resource
 {
     
+    public static $category = "Content";
     /**
      * The model the resource corresponds to.
      *

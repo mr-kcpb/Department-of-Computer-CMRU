@@ -2,24 +2,21 @@
 
 namespace App\Nova;
 
-use Froala\NovaFroalaField\Froala;
-use Illuminate\Support\Facades\Auth;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
-use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class Activity extends Resource
+class Category extends Resource
 {
     
-    public static $category = "Content";
+    public static $category = "Menu";
     /**
      * The model the resource corresponds to.
      *
      * @var string
      */
-    public static $model = 'App\Models\ActivityPage';
+    public static $model = 'App\Models\Category';
     
     /**
      * The single value that should be used to represent the resource when
@@ -27,7 +24,7 @@ class Activity extends Resource
      *
      * @var string
      */
-    public static $title = 'title';
+    public static $title = 'category_name';
     
     /**
      * The columns that should be searched.
@@ -37,7 +34,7 @@ class Activity extends Resource
     public static $search
         = [
             'id',
-            'title',
+            'category_name',
         ];
     
     /**
@@ -52,27 +49,12 @@ class Activity extends Resource
         return [
             ID::make()->sortable(),
             
-            Text::make('Create by User ID', 'user_id')
-                ->withMeta(['value' => Auth::user()->id])
-                ->withMeta([
-                    'extraAttributes' => [
-                        'readonly' => true,
-                    ],
-                ]),
-            
-            Image::make('Image', 'cover_image')
-                 ->rules('required'),
-            
-            Text::make('Title')
+            Text::make('Category Name')
                 ->sortable()
                 ->rules('required', 'max:255'),
-            
-            Froala::make('Detail')
-                  ->rules('required')
-                  ->hideFromIndex()
-                  ->options([
-                      'height' => 600,
-                  ])->withFiles('public'),
+
+            Text::make('Link Page')
+                ->rules('required', 'max:255'),
         ];
     }
     
