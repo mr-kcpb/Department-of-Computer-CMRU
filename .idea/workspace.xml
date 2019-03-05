@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebd183e2-5c0a-46b0-8951-f3093ebcb69c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Models/ActivityPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/ActivityPage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/AnnouncePage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/AnnouncePage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Nova/Activity.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/Activity.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Nova/Announce.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Nova/Announce.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,13 +16,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Nova/Announce.php">
+        <entry file="file://$PROJECT_DIR$/app/Policies/UserPolicy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
-              <folding>
-                <element signature="e#28#62#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="234">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -101,14 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/vendor/nova/partials/logo.blade.php" />
-        <option value="$PROJECT_DIR$/nova/src/Http/Controllers/LoginController.php" />
-        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Providers/NovaServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Models/User.php" />
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/app/Nova/User.php" />
-        <option value="$PROJECT_DIR$/resources/views/vendor/nova/partials/footer.blade.php" />
         <option value="$PROJECT_DIR$/nova/resources/views/partials/footer.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/front-end/components/footer.blade.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -152,6 +138,14 @@
         <option value="$PROJECT_DIR$/app/Nova/Activity.php" />
         <option value="$PROJECT_DIR$/app/Models/AnnouncePage.php" />
         <option value="$PROJECT_DIR$/app/Nova/Announce.php" />
+        <option value="$PROJECT_DIR$/app/Policies/CategoryPolicy.php" />
+        <option value="$PROJECT_DIR$/app/Policies/SubCategoryPolicy.php" />
+        <option value="$PROJECT_DIR$/app/Policies/ActivityPolicy.php" />
+        <option value="$PROJECT_DIR$/app/Policies/AnnouncePagePolicy.php" />
+        <option value="$PROJECT_DIR$/app/Policies/CalendarPolicy.php" />
+        <option value="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" />
+        <option value="$PROJECT_DIR$/app/Policies/PagePolicy.php" />
+        <option value="$PROJECT_DIR$/app/Policies/UserPolicy.php" />
       </list>
     </option>
   </component>
@@ -298,6 +292,18 @@
             <path>
               <item name="computer-cmru" type="b2602c69:ProjectViewProjectNode" />
               <item name="computer-cmru" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Policies" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="computer-cmru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="computer-cmru" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="computer-cmru" type="b2602c69:ProjectViewProjectNode" />
+              <item name="computer-cmru" type="462c0819:PsiDirectoryNode" />
               <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -420,12 +426,12 @@
       <workItem from="1546939638110" duration="11151000" />
       <workItem from="1551325775164" duration="15652000" />
       <workItem from="1551392319338" duration="3699000" />
-      <workItem from="1551640781290" duration="21867000" />
+      <workItem from="1551640781290" duration="22862000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66368000" />
+    <option name="totallyTimeSpent" value="67363000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="23" width="1920" height="992" extended-state="0" />
@@ -460,66 +466,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_12_20_111229_create_activity_pages_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/products2FWB0C06H5D/brave main/index-bootstrap-carousel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2064">
-          <caret line="618" column="52" selection-start-line="618" selection-start-column="52" selection-end-line="618" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/template/front-end/img/raster.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/template/front-end/img/backgrounds/3.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/template/front-end/css/styles/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="6408" column="32" lean-forward="true" selection-start-line="6408" selection-start-column="32" selection-end-line="6408" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/front-end/department/page_1.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="123" lean-forward="true" selection-start-line="123" selection-end-line="123" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/PageSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/SubCategorySeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="141" column="37" lean-forward="true" selection-start-line="141" selection-start-column="37" selection-end-line="141" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/front-end/contact.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-          <folding>
-            <element signature="e#123#157#0#HTML" expanded="true" />
-            <element signature="e#501#522#0#HTML" expanded="true" />
-            <element signature="e#1186#1244#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/template/back-end/vendors/owl.carousel/docs_src/templates/layouts/home.hbs">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -836,11 +782,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Nova/Announce.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+        <state relative-caret-position="390">
+          <caret line="47" column="7" lean-forward="true" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
           <folding>
             <element signature="e#28#62#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Policies/SubCategoryPolicy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Policies/ActivityPagePolicy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Policies/AnnouncePagePolicy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Policies/CalendarPolicy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding>
+            <element signature="e#32#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/AuthServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" column="65" selection-start-line="23" selection-start-column="65" selection-end-line="23" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Policies/CategoryPolicy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="67" column="40" lean-forward="true" selection-start-line="67" selection-start-column="40" selection-end-line="67" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Policies/PagePolicy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
+          <folding>
+            <element signature="e#38#51#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Policies/UserPolicy.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
         </state>
       </provider>
     </entry>
