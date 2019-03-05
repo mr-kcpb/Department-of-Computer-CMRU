@@ -6,7 +6,8 @@
             <div class="col-md-2" id="navbar-logo" style="display: none">
                 <div class="logo">
                     <a href="{{ route('home') }}">
-                        <img src="http://www.computer.cmru.ac.th/images/logo.png" alt="" class="img-responsive">
+                        {{--<img src="http://www.computer.cmru.ac.th/images/logo.png" alt="" class="img-responsive">--}}
+                        <img src="https://www.freelogodesign.org/Content/img/logo-ex-7.png" alt="" class="img-responsive">
                     </a>
                 </div>
             </div>

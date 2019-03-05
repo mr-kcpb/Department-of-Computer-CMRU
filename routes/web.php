@@ -30,3 +30,5 @@ Route::prefix('department')->group(function () {
 });
 
 Route::get('page/{id}', 'ContentController@getPage');
+Route::get('calendar', 'FrontController@calendar');
+Route::post('api/fetch/calendar', 'APIController@getCalendar')->name('api.fetch.calendar');

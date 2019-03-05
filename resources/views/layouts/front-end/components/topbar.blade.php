@@ -6,7 +6,8 @@
     <div class="col-xs-12">
         <div style="padding-top: 30px">
             <a href="{{ route('home') }}">
-                <img src="http://www.computer.cmru.ac.th/images/logo.png" alt="" class="img-responsive">
+                {{--<img src="http://www.computer.cmru.ac.th/images/logo.png" alt="" class="img-responsive">--}}
+                <img src="https://www.freelogodesign.org/Content/img/logo-ex-7.png" alt="" class="" style="height: 100px">
             </a>
         </div>
     </div>

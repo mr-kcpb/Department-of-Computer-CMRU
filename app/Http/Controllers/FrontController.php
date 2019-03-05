@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\ActivityPage;
 use App\Models\AnnouncePage;
+use App\Models\Calendar;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -41,5 +42,12 @@ class FrontController extends Controller
     public function contact()
     {
         return view('front-end.contact');
+    }
+    
+    public function calendar()
+    {
+        $calendars = Calendar::latest()->get();
+        
+        return view('front-end.calendar', compact('calendars'));
     }
 }
