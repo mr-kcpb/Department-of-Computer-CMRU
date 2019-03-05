@@ -18,11 +18,11 @@ class CreateCalendarsTable extends Migration
             $table->unsignedInteger('user_id');
             $table->string('topic');
             $table->string('place');
-            $table->string('detail');
+            $table->text('detail');
             $table->date('date_start');
             $table->date('date_end');
-            $table->string('time_start');
-            $table->string('time_end');
+            $table->time('time_start');
+            $table->time('time_end');
             $table->timestamps();
             $table->softDeletes();
         });

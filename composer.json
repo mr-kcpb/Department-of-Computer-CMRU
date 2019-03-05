@@ -12,6 +12,7 @@
         "alexbowers/nova-categorise-resources": "^1.0",
         "fideloper/proxy": "^4.0",
         "froala/nova-froala-field": "^1.1",
+        "laraning/nova-time-field": "^0.1.0",
         "laravel/framework": "5.7.*",
         "laravel/nova": "*",
         "laravel/tinker": "^1.0"
