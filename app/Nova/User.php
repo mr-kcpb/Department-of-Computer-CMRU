@@ -3,6 +3,7 @@
 namespace App\Nova;
 
 use Laravel\Nova\Fields\Avatar;
+use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Image;
@@ -84,6 +85,11 @@ class User extends Resource
                     ->onlyOnForms()
                     ->creationRules('required', 'string', 'min:6')
                     ->updateRules('nullable', 'string', 'min:6'),
+            
+            Boolean::make('Edit Content')
+                   ->canSee(function ($request) {
+                       return $request->user()->root_status == 1;
+                }),
         ];
     }
     
