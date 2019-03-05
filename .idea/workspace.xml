@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebd183e2-5c0a-46b0-8951-f3093ebcb69c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/nova/resources/views/dashboard/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/nova/resources/views/dashboard/navigation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/NovaServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/NovaServiceProvider.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,10 +16,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nova/resources/views/dashboard/navigation.blade.php">
+        <entry file="file://$PROJECT_DIR$/app/Providers/NovaServiceProvider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="2" column="33" lean-forward="true" selection-end-line="4" />
+            <state relative-caret-position="535">
+              <caret line="59" column="10" lean-forward="true" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -95,7 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/database/migrations/2018_12_20_111229_create_activity_pages_table.php" />
         <option value="$PROJECT_DIR$/public/template/front-end/css/styles/style.css" />
         <option value="$PROJECT_DIR$/database/seeds/PageSeeder.php" />
@@ -146,6 +145,7 @@
         <option value="$PROJECT_DIR$/app/Nova/User.php" />
         <option value="$PROJECT_DIR$/app/Policies/UserPolicy.php" />
         <option value="$PROJECT_DIR$/nova/resources/views/dashboard/navigation.blade.php" />
+        <option value="$PROJECT_DIR$/app/Providers/NovaServiceProvider.php" />
       </list>
     </option>
   </component>
@@ -476,12 +476,12 @@
       <workItem from="1546939638110" duration="11151000" />
       <workItem from="1551325775164" duration="15652000" />
       <workItem from="1551392319338" duration="3699000" />
-      <workItem from="1551640781290" duration="23615000" />
+      <workItem from="1551640781290" duration="23687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68116000" />
+    <option name="totallyTimeSpent" value="68188000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="23" width="1920" height="992" extended-state="0" />
@@ -516,16 +516,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/fzaninotto/faker/src/Faker/Generator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="180" column="29" lean-forward="true" selection-start-line="180" selection-start-column="29" selection-end-line="180" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/factories/ActivityPagesFactory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -904,8 +894,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nova/resources/views/dashboard/navigation.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="2" column="33" lean-forward="true" selection-end-line="4" />
+        <state relative-caret-position="286">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/nova.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-963" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Providers/NovaServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="59" column="10" lean-forward="true" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
         </state>
       </provider>
     </entry>
