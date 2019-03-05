@@ -43,7 +43,7 @@ class UserPolicy
      */
     public function update( $user, User $model)
     {
-        return $user->edit_content == 1;
+        return $user->edit_content == 1 && $model->root_status != $user->id;
     }
 
     /**
@@ -55,7 +55,7 @@ class UserPolicy
      */
     public function delete( $user, User $model)
     {
-        return $user->edit_content == 1;
+        return $user->edit_content == 1 && $model->root_status != $user->id;
     }
 
     /**
