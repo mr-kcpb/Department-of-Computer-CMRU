@@ -51,14 +51,6 @@ class Announce extends Resource
         return [
             ID::make()->sortable(),
             
-            Text::make('Create by User ID', 'user_id')
-                ->withMeta(['value' => Auth::user()->id])
-                ->withMeta([
-                    'extraAttributes' => [
-                        'readonly' => true,
-                    ],
-                ]),
-            
             Text::make('Title')
                 ->sortable()
                 ->rules('required', 'max:255'),

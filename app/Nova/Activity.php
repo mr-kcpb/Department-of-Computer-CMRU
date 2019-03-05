@@ -52,14 +52,6 @@ class Activity extends Resource
         return [
             ID::make()->sortable(),
             
-            Text::make('Create by User ID', 'user_id')
-                ->withMeta(['value' => Auth::user()->id])
-                ->withMeta([
-                    'extraAttributes' => [
-                        'readonly' => true,
-                    ],
-                ]),
-            
             Image::make('Image', 'cover_image')
                  ->rules('required'),
             

@@ -15,6 +15,15 @@ class AnnouncePage extends Model
     protected $guarded = [];
     protected $dates = ['deleted_at'];
     
+    public static function boot()
+    {
+        parent::boot();
+        
+        static::creating(function ($calendar) {
+            $calendar->user_id = auth()->user()->id;
+        });
+    }
+    
     public function user()
     {
         return $this->belongsTo('App\Models\User', 'user_id');
