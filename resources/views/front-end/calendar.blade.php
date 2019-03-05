@@ -25,13 +25,20 @@
             $('#calendar').fullCalendar({
                 defaultView: 'list',
                 events: [
-                    @foreach ($calendars as $calendar)
-                        {
-                            title: '{{ $calendar->topic }}',
-                            start: '{{ \Carbon\Carbon::parse($calendar->created_at)->format('Y-m-d') }}',
-                        },
+                        @foreach ($calendars as $calendar)
+                    {
+                        title: '{{ $calendar->topic }}',
+                        start: '{{ \Carbon\Carbon::parse($calendar->created_at)->format('Y-m-d') }}',
+                        url: '{{ env('APP_URL') . '/calendar/' . $calendar->id }}'
+                    },
                     @endforeach
                 ],
+                eventClick: function (event) {
+                    if (event.url) {
+                        window.open(event.url);
+                        return false;
+                    }
+                }
             });
 
             $('.fc-toolbar').remove();

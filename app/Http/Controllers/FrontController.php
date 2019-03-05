@@ -50,4 +50,11 @@ class FrontController extends Controller
         
         return view('front-end.calendar', compact('calendars'));
     }
+    
+    public function getCalendar($id)
+    {
+        $calendar = Calendar::find($id);
+        
+        return view('front-end.calendar-detail', compact('calendar'));
+    }
 }
