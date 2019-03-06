@@ -96,9 +96,10 @@ class UserSeeder extends Seeder
         
         createUser(
             [
-                'first_name'  => 'ภาณุวัฒน์',
-                'last_name'   => 'สุวรรณกูล',
-                'root_status' => 1,
+                'first_name'   => 'ภาณุวัฒน์',
+                'last_name'    => 'สุวรรณกูล',
+                'root_status'  => 1,
+                'edit_content' => 1,
             ]
         );
         

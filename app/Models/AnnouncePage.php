@@ -19,8 +19,10 @@ class AnnouncePage extends Model
     {
         parent::boot();
         
-        static::creating(function ($calendar) {
-            $calendar->user_id = auth()->user()->id;
+        static::creating(function ($announce) {
+            if (auth()->check()) {
+                $announce->user_id = auth()->user()->id;
+            }
         });
     }
     

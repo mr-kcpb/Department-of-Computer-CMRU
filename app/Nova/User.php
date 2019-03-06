@@ -86,13 +86,10 @@ class User extends Resource
                     ->creationRules('required', 'string', 'min:6')
                     ->updateRules('nullable', 'string', 'min:6'),
             
-            Boolean::make('Edit Content')
-                   ->canSee(function ($request) {
-                       return $request->user()->root_status == 1;
-                   }),
+            Boolean::make('Edit Content'),
             
-            Boolean::make('Edit Status', 'edit_content')
-                   ->onlyOnIndex(),
+//            Boolean::make('Edit Status', 'edit_content')
+//                   ->onlyOnIndex(),
 
             Boolean::make('Root Status')
                    ->onlyOnIndex(),
