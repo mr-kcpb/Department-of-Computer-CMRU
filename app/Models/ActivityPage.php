@@ -19,8 +19,10 @@ class ActivityPage extends Model
     {
         parent::boot();
         
-        static::creating(function ($calendar) {
-            $calendar->user_id = auth()->user()->id;
+        static::creating(function ($activity) {
+            if (auth()->check()) {
+                $activity->user_id = auth()->user()->id;
+            }
         });
     }
     

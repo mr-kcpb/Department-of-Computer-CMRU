@@ -22,7 +22,9 @@ class Calendar extends Model
         parent::boot();
         
         static::creating(function ($calendar) {
-            $calendar->user_id = auth()->user()->id;
+            if (auth()->check()) {
+                $calendar->user_id = auth()->user()->id;
+            }
         });
     }
     
