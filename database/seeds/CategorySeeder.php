@@ -33,6 +33,7 @@ class CategorySeeder extends Seeder
         ]);
         Category::create([
             'category_name' => 'ปฏิทินวิชาการ',
+            'link_page'     => env('APP_URL') . '/calendar',
         ]);
         Category::create([
             'category_name' => 'ติดต่อ',
