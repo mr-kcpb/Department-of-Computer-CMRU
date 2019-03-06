@@ -2,6 +2,47 @@
 @section('content')
     <div class="main-block">
         <div class="container" style="min-height: 100vh; margin-bottom: 30px">
+
+            <!-- Revolution slider full width starts -->
+            <div class="r-slider">
+                <div class="bannercontainer">
+                    <div class="banner">
+                        <ul>
+                            <li data-transition="fadefromright" data-slotamount="5">
+                                <img src="https://www.cmru.ac.th/assets/images/banners/th/07-02-2019/806d1b242eec6277ed8b4e05d746bcdbd4630bda." alt=""
+                                     data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                            </li>
+                            <li data-transition="fadefromright" data-slotamount="5">
+                                <img src="https://www.cmru.ac.th/assets/images/banners/th/28-02-2019/ab49fc063077a6153c8669e816d0ab32bc1ad9b8.png" alt=""
+                                     data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                            </li>
+                            <li data-transition="fadefromright" data-slotamount="5">
+                                <img src="https://www.cmru.ac.th/assets/images/banners/th/14-01-2019/7e71d1413714eb44ee2b9adebd3626621281633f.png" alt=""
+                                     data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                            </li>
+                            <li data-transition="fadefromright" data-slotamount="5">
+                                <img src="https://www.cmru.ac.th/assets/images/banners/th/31-01-2019/66da94af3e7ce022a353873cec00af339fbd6796.png" alt=""
+                                     data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                            </li>
+                            <li data-transition="fadefromright" data-slotamount="5">
+                                <img src="https://www.cmru.ac.th/assets/images/banners/th/01-11-2018/83e76e28f63283dfb1da77e374b4b4970013e2dc.jpg" alt=""
+                                     data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                            </li>
+                            <li data-transition="fadefromright" data-slotamount="5">
+                                <img src="https://www.cmru.ac.th/assets/images/banners/th/10-09-2018/14f422a5ed6f85e4b3a4803fddc93232c57cf265.jpg" alt=""
+                                     data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                            </li>
+                            <li data-transition="fadefromright" data-slotamount="5">
+                                <img src="https://www.cmru.ac.th/assets/images/banners/th/14-11-2018/5e84f6aad999eff3d27967d5b5a53349e5e7f4c1." alt=""
+                                     data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Revolution slider full width ends -->
+
             <div class="divider-1"></div>
 
             <div class="block-heading-two">
@@ -123,7 +164,7 @@
                                 </p>
                             </a>
                         @endforeach
-                            <hr>
+                        <hr>
                         <div class="form-group text-right">
                             <a href="#">
                                 <p class="text-success">
@@ -136,7 +177,10 @@
                 </div>
                 <div class="col-xs-12 col-md-4">
                     <div class="form-group">
-                        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCMRUCOMPUTER%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCMRUCOMPUTER%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+                            width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowTransparency="true" allow="encrypted-media"></iframe>
                     </div>
                 </div>
             </div>
@@ -190,3 +234,78 @@
     {{--</div>--}}
     {{--</div>--}}
 @endsection
+
+@push ('script')
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+            jQuery('.r-slider .banner').revolution({
+                delay:7000,
+                startheight:400,
+                startwidth:1000,
+                startWithSlide:0,
+
+                fullScreenAlignForce:"off",
+                autoHeight:"off",
+
+                shuffle:"off",
+
+                onHoverStop:"on",
+
+                thumbWidth:100,
+                thumbHeight:50,
+                thumbAmount:3,
+
+                hideThumbsOnMobile:"on",
+                hideNavDelayOnMobile:1500,
+                hideBulletsOnMobile:"off",
+                hideArrowsOnMobile:"off",
+                hideThumbsUnderResoluition:0,
+
+                hideThumbs:10,
+                hideTimerBar:"on",
+
+                keyboardNavigation:"on",
+
+                navigationType:"bullet",
+                navigationArrows:"solo",
+                navigationStyle:"round",
+
+                navigationHAlign:"center",
+                navigationVAlign:"bottom",
+
+                soloArrowLeftHalign:"left",
+                soloArrowLeftValign:"center",
+                soloArrowLeftHOffset:20,
+                soloArrowLeftVOffset:0,
+
+                soloArrowRightHalign:"right",
+                soloArrowRightValign:"center",
+                soloArrowRightHOffset:20,
+                soloArrowRightVOffset:0,
+
+
+                touchenabled:"on",
+                swipe_velocity:"0.7",
+                swipe_max_touches:"1",
+                swipe_min_touches:"1",
+                drag_block_vertical:"false",
+
+                stopAtSlide:-1,
+                stopAfterLoops:-1,
+                hideCaptionAtLimit:0,
+                hideAllCaptionAtLilmit:0,
+                hideSliderAtLimit:0,
+
+                dottedOverlay:"none",
+
+                spinned:"spinner4",
+
+                fullWidth:"off",
+                forceFullWidth:"off",
+                fullScreen:"off",
+                fullScreenOffsetContainer:"#topheader-to-offset",
+
+            });
+        });
+    </script>
+@endpush
